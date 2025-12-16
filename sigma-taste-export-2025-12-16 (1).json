@@ -1,0 +1,505 @@
+{
+  "version": "1.0.0",
+  "comparisons": [
+    {
+      "id": "9a6ps746rp",
+      "video_a_id": "8e649975-f660-442c-8581-eabaa335a26d",
+      "video_b_id": "59fd28df-beda-45de-b490-6ca050893333",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "The content types are different. One is a slightly amusing and entertaining video (making the latté), that isn't exactly humorous but has a low energy flow to it, where the viewer may find it amusing to see a customer trying to make a latté. The other video has a format that is more accessible and easy to replicate, but also requires to have a good story, since the one retold in the video is specific to what the person is saying.",
+      "created_at": "2025-12-16T14:09:06.928Z"
+    },
+    {
+      "id": "h16d4zpsxr8",
+      "video_a_id": "69e4bbea-5f77-4785-bf06-40119eab25b0",
+      "video_b_id": "da6815da-5a1f-48bc-a3ad-69f0757377cc",
+      "winner_id": "da6815da-5a1f-48bc-a3ad-69f0757377cc",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "The first video is easier to replicate, but the humour in itself is very simple and not the most amusing. The second video is harder to replicate, but has a more engaging and creative premise. The video of the barista requires some animated acting, which he does well. The acting in the first video is slightly less amusing.",
+      "created_at": "2025-12-16T14:11:20.442Z"
+    },
+    {
+      "id": "ikbygwb93g",
+      "video_a_id": "cf783359-047d-4e6d-bf7e-8af7ef0d0f6a",
+      "video_b_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "winner_id": "cf783359-047d-4e6d-bf7e-8af7ef0d0f6a",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "The first video has more engaging and fast paced editing, as well as a more engaging and creative premise. Both are playing on absurdism, but the first video has a tempo and also young attractive women playing out the sketch. The first one has a more fun premise, and the result of the misunderstanding is more fun than the other. ",
+      "created_at": "2025-12-16T14:14:21.506Z"
+    },
+    {
+      "id": "famcddudcmi",
+      "video_a_id": "42887f4b-7fb7-41be-bb7f-b1acba21ca5d",
+      "video_b_id": "ffbc9f08-7c9f-4031-bdd3-2f26e15266a0",
+      "winner_id": "42887f4b-7fb7-41be-bb7f-b1acba21ca5d",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both are somewhat amusing, but the premise in Video A (42887f4b) (Video A (42887f4b) (42887f4b), 42887f4b) (Steve's poke) is more clever. The idea of proposing with that type of camera reveal is clever. Video B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08) has a somewhat amusing premise, but the payoff isn't very strong in itself (The cashier taking the card due to feeling annoyed). Video B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08) is likely more replicable, since Video A (42887f4b) (Video A (42887f4b) (42887f4b), 42887f4b) needs to replace the product in question.",
+      "created_at": "2025-12-16T14:17:46.047Z"
+    },
+    {
+      "id": "leoet66i17b",
+      "video_a_id": "8e649975-f660-442c-8581-eabaa335a26d",
+      "video_b_id": "0c3565fa-9cc4-45f6-a868-4a2ce416b3ab",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video A (8e649975) (Video A (8e649975) (8e649975), 8e649975) featuring the barista is somewhat amusing, but isn't very humorous. It has a slow paced entertainment value, where the viewer wants to see how well the \"customer\" does a latté, which I assume is engaging for some viewers. Video B (0c3565fa) (Video B (0c3565fa) (0c3565fa), 0c3565fa) has the make up of a somewhat strong premise, but isn't very funny in the end. The idea of asking co workers in order to hurry up, ending with clapping, and seeing the customers confusion, isn't a very funny payoff. But the absurdism is there, just not performed great. No one stands out as very good.",
+      "created_at": "2025-12-16T14:20:10.430Z"
+    },
+    {
+      "id": "7la5tcjpbpa",
+      "video_a_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "video_b_id": "36912289-7df1-4da6-a4b0-eb07ab66af25",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both videos are amusing, and playing on simple observations/scenarios that has a visual feedback that is absurdist. Video A (f530b678) (Video A (f530b678) (f530b678), f530b678) has a slightly amusing premise, showing how a young employee will hide from a potentially tough discussion with his manager, and showing the unrealistic distracting tasks the person does to avoid the discussion. Video B (36912289) (Video B (36912289) (36912289), 36912289) has a similar premise, which is likely equally or slightly less fun on it's own, but is edited in a more engaging way. The actress (worker) in Video B (36912289) (Video B (36912289) (36912289), 36912289) is also a bit more animated, and more attractive which helps with engagement.",
+      "created_at": "2025-12-16T14:24:08.538Z"
+    },
+    {
+      "id": "6x3m2bvbjyc",
+      "video_a_id": "af5f10fd-07bc-475f-a983-07d41c8b6d8e",
+      "video_b_id": "408c91fc-35fd-44e7-b6b1-a290d5dc7cba",
+      "winner_id": "af5f10fd-07bc-475f-a983-07d41c8b6d8e",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both are not great or have a strong standalone premise. Video A (af5f10fd) (Video A (af5f10fd) (af5f10fd), af5f10fd) of the male staff singing into the camera has a lot of attitude, and feels funny because it's not expected. It also relies on a TikTok sound, which makes the premise not super good or clever. Video B (408c91fc) (Video B (408c91fc) (408c91fc), 408c91fc) is a bit simpler, the premise is amusing and can be replicated. But it also relies on a TikTok sound, and the payoff isn't the most satisfying.",
+      "created_at": "2025-12-16T14:38:45.751Z"
+    },
+    {
+      "id": "af5olfc2o3h",
+      "video_a_id": "8e649975-f660-442c-8581-eabaa335a26d",
+      "video_b_id": "08ec836f-d7a9-4674-a482-20d7e6145f76",
+      "winner_id": "08ec836f-d7a9-4674-a482-20d7e6145f76",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video A (8e649975) (Video A (8e649975) (8e649975), 8e649975) has a more slow paced payoff. More a visual satisfaction than a humorous payoff. Video B (08ec836f) (Video B (08ec836f) (08ec836f), 08ec836f) has a premise that has been trending for some time, but is fun to se recreated. The original shows a customer complaining that their item is being prepared incorrectly, and then the staffer asks \"did you say that when you ordered\", and after hearing 'no', they say \"then it's not your f***ing order\". This gives the Video A (8e649975) slightly shocking effect, but also leans on some of the expected \"fun\" that comes from seeing a somewhat easy going looking person swear. It has a better payoff and is more edgy. Video B (08ec836f) (Video B (08ec836f) (08ec836f), 08ec836f) is also well edited.",
+      "created_at": "2025-12-16T14:41:20.962Z"
+    },
+    {
+      "id": "tvyb6f0euh",
+      "video_a_id": "5bca070f-bece-4627-a88a-7bab3035c604",
+      "video_b_id": "7269df3d-3e8d-40cf-a919-b77f9387b724",
+      "winner_id": "5bca070f-bece-4627-a88a-7bab3035c604",
+      "dimension": "overall",
+      "confidence": "certain",
+      "reasoning": "For the purpose of the algorithm Video A (5bca070f) (Video A (5bca070f) (5bca070f), 5bca070f) is better. It contains a sketch that is replicable, the humour is accessible and isn't reliant on a backdrop or some specific items. Despite not having any dialogue, Video A (5bca070f) (Video A (5bca070f) (5bca070f), 5bca070f) has a scene development making it a sketch. Video B (7269df3d) (Video B (7269df3d) (7269df3d), 7269df3d) isn't functional for the reason that it isn't a sketch or engaging premise/concept, but it has it in its own way. The comparison of what to eat Video A (5bca070f) (Video A (5bca070f) (5bca070f), 5bca070f) - fries or burger, is a known trope. The video looks more like a recording of two friends on their personal profile page. It's not exactly replicable in how it's now recorded, but the premise can be reused or recorded differently. But the core premise isn't the most strong still.",
+      "created_at": "2025-12-16T14:43:48.637Z"
+    },
+    {
+      "id": "caqb635tzml",
+      "video_a_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "video_b_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "winner_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Despite Video B (580e13cf) (Video B (580e13cf) (580e13cf), 580e13cf) is much simpler and doesn't fill most of the criteria of what normally makes a good video - it has a simple idea and is funny. Video A (f530b678) (Video A (f530b678) (f530b678), f530b678) has a sketch outline, with visual scenes that create absurdity and makes the video engaging and memorable. Video B (580e13cf) (Video B (580e13cf) (580e13cf), 580e13cf) plays on a pun, but it's simple and to the point. Video B (580e13cf) (Video B (580e13cf) (580e13cf), 580e13cf) videos premise can also be replicated a bit easier, although there is a need to exchange the item into something relevant to the business using the concept. Overall, the punchline of \"going lower\" (physically lower instead of price lower) has a neat little freshness to it. It's a bit in your face.",
+      "created_at": "2025-12-16T14:46:35.507Z"
+    },
+    {
+      "id": "406lvqt8wz",
+      "video_a_id": "7abe3bb9-aa31-4154-923a-4c54a42f12e6",
+      "video_b_id": "610f7e10-34d7-445a-b1d8-7ff58bbda990",
+      "winner_id": "7abe3bb9-aa31-4154-923a-4c54a42f12e6",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both videos are not excellent for different reasons. Video A (7abe3bb9) (Video A (7abe3bb9) (7abe3bb9), 7abe3bb9) has an engaging and a bit edgy premise, and the punchline talks about wanting to attack (while still maintaining absurdism) a co worker. It relies on a meme sound, where the punch-line is \"It's not about the money\", meaning there is underlying tension within the staff which can be a replicable and somewhat fun premise for Video B (610f7e10) (610f7e10) type of team (a bit edgier, taking risks).\n\nVideo B (610f7e10) (Video B (610f7e10) (610f7e10), 610f7e10) doesn't have as strong of a premise, and the punchline is simply a tiktok sound comparing the kitchen heat to animal genitalia. It's not very creative and just goes for a type of chock effect.",
+      "created_at": "2025-12-16T14:50:03.699Z"
+    },
+    {
+      "id": "d4cyvo7ehrk",
+      "video_a_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "video_b_id": "185a486a-a923-4513-84cd-51b0bd0f8a5d",
+      "winner_id": "185a486a-a923-4513-84cd-51b0bd0f8a5d",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both videos have simple premises, but Video B (185a486a) (Video B (185a486a) (185a486a), 185a486a) is slightly funnier and has a more engaging visual payoff. Seeing the customers discussing wildly who gets to pay (illustrated by the hands with cards trying to reach the payment terminal), while zooming in on the staff workers face, is a fun dynamic shot that says a lot in a simple shot. It's more clever than Video A (580e13cf) (Video A (580e13cf) (580e13cf), 580e13cf), which plays on a simple pun but still is somewhat amusing.",
+      "created_at": "2025-12-16T14:52:19.027Z"
+    },
+    {
+      "id": "04a0az0o3003",
+      "video_a_id": "7abe3bb9-aa31-4154-923a-4c54a42f12e6",
+      "video_b_id": "464f01f2-659c-4b4a-9c00-e76b4cb6569f",
+      "winner_id": "464f01f2-659c-4b4a-9c00-e76b4cb6569f",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both are equally not very good. Video B (464f01f2) (Video B (464f01f2) (464f01f2), 464f01f2) has a more dynamic and \"hooky\" beginning, with a staff member running through a kitchen in order to spill \"tea\", illustrating that there is a dynamic where gossip is spread between staffers. It's not very creative and the payoff isn't very big.\n\nVideo A (7abe3bb9) (Video A (7abe3bb9) (7abe3bb9), 7abe3bb9) is also a bit boring, but also contains themes that may be deemed a bit risky, talking about workplace disagreements and young people wanting to cause physical harm to each others.",
+      "created_at": "2025-12-16T14:54:13.925Z"
+    },
+    {
+      "id": "hcrovfud61h",
+      "video_a_id": "01b41059-d1e7-4261-acc3-fd33d9cf2c2a",
+      "video_b_id": "7269df3d-3e8d-40cf-a919-b77f9387b724",
+      "winner_id": "01b41059-d1e7-4261-acc3-fd33d9cf2c2a",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "None of the videos are great, but Video A (01b41059) (Video A (01b41059) (01b41059), 01b41059) has a structure that can be replicated by other businesses, which is important in my gradation. The premise of Video A (01b41059) (Video A (01b41059) (01b41059), 01b41059) is simple, not the most creative or funny, but has a camera movement and facial expression that functions as a type of payoff. Video B (7269df3d) (Video B (7269df3d) (7269df3d), 7269df3d) is about answering the quesition of if fries or burgers go Video A (01b41059) (Video A (01b41059) (01b41059), 01b41059). It isn't a structure that has a standalone replicability that can be remade to expect virality or engagement.",
+      "created_at": "2025-12-16T14:56:47.048Z"
+    },
+    {
+      "id": "687iefivzud",
+      "video_a_id": "a1c1a481-4774-4840-9965-a35b6900a5e3",
+      "video_b_id": "01b41059-d1e7-4261-acc3-fd33d9cf2c2a",
+      "winner_id": "01b41059-d1e7-4261-acc3-fd33d9cf2c2a",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video B (01b41059) (Video B (01b41059) (01b41059), 01b41059) is a sketch that can be replicated. The premise of the Poke bar video isn't the most clever or engaging, but it has a sketch structure that works for other brands that want to replicate it. Video A (a1c1a481) (Video A (a1c1a481) (a1c1a481), a1c1a481) isn't very useful since it works more as an informative video showing of a new item. The video contains a person opening up a wrapper and going for a bite, which isn't a structure for a sketch or a premise that can be replicated by another brand aiming for viralability.",
+      "created_at": "2025-12-16T14:58:28.743Z"
+    },
+    {
+      "id": "6m4ydwtkjiw",
+      "video_a_id": "97e01077-4e0b-44a7-adf6-3220defbe60c",
+      "video_b_id": "ffbc9f08-7c9f-4031-bdd3-2f26e15266a0",
+      "winner_id": "97e01077-4e0b-44a7-adf6-3220defbe60c",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video A (97e01077) (Video A (97e01077) (97e01077), 97e01077) has a script that creates more engagement, and generally plays on the absurdity factor quite well. It has two twists and turns, which also include the implied idea of a business worker physically hurting a customer asking for a modified food item. This is extreme and that can sometimes give an \"edge\" that is engaging. Payoffs with chock factors are usually stronger when the core concept is clever.\n\nVideo B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08) has a tighter structure, and the premise is more clear. But it's a bit shorter, not as ambition as Video B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08), and has one main beat, instead of Video A (97e01077) (Video A (97e01077) (97e01077), 97e01077) that has 2-3 beats. Video B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08) likely has better replicability than Video A (97e01077) (Video A (97e01077) (97e01077), 97e01077).",
+      "created_at": "2025-12-16T15:02:04.254Z"
+    },
+    {
+      "id": "ijr9uicjffb",
+      "video_a_id": "5ebac5d3-aa7e-49f0-ac19-f64926830ba5",
+      "video_b_id": "da6815da-5a1f-48bc-a3ad-69f0757377cc",
+      "winner_id": "da6815da-5a1f-48bc-a3ad-69f0757377cc",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both videos are somewhat amusing. Video B (da6815da) (Video B (da6815da) (da6815da), da6815da) plays more on an animated actor playing a trope of a really stressed and focused barista, which is a cultural understanding that some may get, and some may not care for as much. But the trope often has to do with flamboyant men, but mainly bossy women, which makes the entire premise quite funny. The video is longer, but the script has many creative beats and a funny incremental absurdism.\n\nVideo A (5ebac5d3) (Video A (5ebac5d3) (5ebac5d3), 5ebac5d3) is simpler, and likely much more accessible, not expecting cultural understanding or enjoyment of a different type of strange/weird humor that Video B (da6815da) (Video B (da6815da) (da6815da), da6815da) contains. Video A (5ebac5d3) (Video A (5ebac5d3) (5ebac5d3), 5ebac5d3), with the payoff of the staffer being revealed to have took a bite from the customers food, is fun but doesn't have a lot of effect or emotional resonanse.",
+      "created_at": "2025-12-16T15:05:25.456Z"
+    },
+    {
+      "id": "n4c6iqeu52g",
+      "video_a_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "video_b_id": "c6dcce7b-211a-4d55-88fe-e8f5d4dc3551",
+      "winner_id": "c6dcce7b-211a-4d55-88fe-e8f5d4dc3551",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video B (c6dcce7b) (Video B (c6dcce7b) (c6dcce7b), c6dcce7b) has a more evolved structure that is more useful for a business aiming to replicate the concept. It has more beats that create an engaging concept, and is more memorable than Video A (580e13cf) (Video A (580e13cf) (580e13cf), 580e13cf). The script in Video B (c6dcce7b) (Video B (c6dcce7b) (c6dcce7b), c6dcce7b) isn't the most clever, but the premise is somewhat engaging. A friend asking for a fry but then eating it all. The payoff isn't very clever, but rather feels like an expected continuation of the issue, someone taking too much liberty in what they are doing.\n\nVideo A (580e13cf) (Video A (580e13cf) (580e13cf), 580e13cf) is simple, and has a pun structure. It's funny, but would generally not elicit too much engagement due to the concept not carrying weight or not being the most memorable, despite it giving a nice little satisfying payoff.",
+      "created_at": "2025-12-16T15:08:42.007Z"
+    },
+    {
+      "id": "vx4oo4vb9m",
+      "video_a_id": "967f5700-83f6-43c8-aa6e-138cf962c80b",
+      "video_b_id": "a860739f-9e5b-475c-bca3-b54f98f04188",
+      "winner_id": "967f5700-83f6-43c8-aa6e-138cf962c80b",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both of these are funny. Video A (967f5700) (Video A (967f5700) (967f5700), 967f5700) has a nice edgy premise, cleverly presented as a worker talking into the camera and describing that any customer can eat where they want, without the worker being upset. While talking, she closes the trunk on a car with a woman tied up inside, implying that the real consequence is much graver. This juxtaposition is clever and funny, combining a visual payoff with a premise setup with a text overlay.\n\nVideo B (a860739f) (Video B (a860739f) (a860739f), a860739f) is somewhat clever as well, and keeps engagement by seeing how the sketch evolves, whiile staying aligned with the original premise setup in text. The premise isn't the most creative, but creates something of an implied backstory, talking about a dynamic where the staffer is a bit annoyed by how creative the manager is when it comes to making her life at work annoying. It tells a story, and that has some cleverness integrated.",
+      "created_at": "2025-12-16T15:12:27.189Z"
+    },
+    {
+      "id": "pxuatlcvbsf",
+      "video_a_id": "1cd1e012-c906-45a6-b5cd-c78125dd3b79",
+      "video_b_id": "77ea6fbb-a868-485c-b19d-e324cd5d74a1",
+      "winner_id": "1cd1e012-c906-45a6-b5cd-c78125dd3b79",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both clips are amusing, but for different audiences. Video A (1cd1e012) (Video A (1cd1e012) (1cd1e012), 1cd1e012) has a simple setup and payoff, and relies on animated acting. The target audience is a bit broader than Video B (77ea6fbb) (Video B (77ea6fbb) (77ea6fbb), 77ea6fbb), and has a safer enjoyment than Video B (77ea6fbb) (Video B (77ea6fbb) (77ea6fbb), 77ea6fbb).\n\nThe video of the woman in the kitchen is more clever, and amusing, but relies on a TikTok trend sound. Meaning that it borrows virality from something that isn't recorded or produced by the user. The juxtaposition of having an overlay talking very softly and kindly about \"what she really feels\", while freaking out with her body language, implies that it is actually the other way around. The premise is simple and fun, but isn't the most creative or memorable.",
+      "created_at": "2025-12-16T15:15:28.984Z"
+    },
+    {
+      "id": "7axgc7zb1fw",
+      "video_a_id": "e1ad2e56-e110-4d9d-9f0e-b9df18ff8b75",
+      "video_b_id": "32d9345a-40e4-4f2d-9067-42e665b75e90",
+      "winner_id": "32d9345a-40e4-4f2d-9067-42e665b75e90",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both of these videos have strong premises. Video A (e1ad2e56) (Video A (e1ad2e56) (e1ad2e56), e1ad2e56) is not set in a restaurant/service environment, but has a replicability that can be set in any type of place. The idea of missing snus to the extent that she is hallucinating the friend is clever and funny, using editing to make the payoff effective in the end. It's replicable but requires some good editing.\n\nVideo B (32d9345a) (Video B (32d9345a) (32d9345a), 32d9345a) is also clever, playing on the idea of a \"inner voice\" talking when the customer (POV view) is evaluating whether to provide a tip. The payoff is that the customer is actually not thinking that, but that it is the workers voice telling the customer what to do, which is a bit funny.",
+      "created_at": "2025-12-16T15:29:47.429Z"
+    },
+    {
+      "id": "zaoual445e",
+      "video_a_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "video_b_id": "75b798c1-24c9-4c28-a92d-a24ffc351dc0",
+      "winner_id": "75b798c1-24c9-4c28-a92d-a24ffc351dc0",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video B (75b798c1) (Video B (75b798c1) (75b798c1), 75b798c1) sketch is better because the payoff is more satisfying, and more clever. Video B (75b798c1) (Video B (75b798c1) (75b798c1), 75b798c1) plays on a more creative trope, the idea of a team inside of a kitchen having experienced a battle, like a war time squad, and having one person experiencing a type of PTSD, shown by the physical reveal in the end. It's clever and quite funny. This sketch relies on a TikTok sound which makes the video less replicable or easy to replicate.\n\nVideo A (580e13cf) (Video A (580e13cf) (580e13cf), 580e13cf) is simple and somewhat funny but not as memorable. The premise isn't as clever.",
+      "created_at": "2025-12-16T15:32:49.580Z"
+    },
+    {
+      "id": "s76h48d6dg9",
+      "video_a_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "video_b_id": "610f7e10-34d7-445a-b1d8-7ff58bbda990",
+      "winner_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "dimension": "overall",
+      "confidence": "certain",
+      "reasoning": "Video A (580e13cf) (Video A (580e13cf) (580e13cf), 580e13cf) is better due to the theme being more wholesome. The payoff in Video B (610f7e10) (Video B (610f7e10) (610f7e10), 610f7e10) just plays on a over the top TikTok sound, with somewhat of a vulgar tone.",
+      "created_at": "2025-12-16T15:33:58.280Z"
+    },
+    {
+      "id": "0n0jhg7umilr",
+      "video_a_id": "7208c328-cade-41c1-85e7-7c993fb62724",
+      "video_b_id": "08ec836f-d7a9-4674-a482-20d7e6145f76",
+      "winner_id": "08ec836f-d7a9-4674-a482-20d7e6145f76",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both of these videos are somewhat amusing, but have different profiles in how they function. Video A (7208c328) (Video A (7208c328) (7208c328), 7208c328) has a premise setup with a pun, beginning with a customer POV and then showing the punchline in a different camera angle. Video A (7208c328) (Video A (7208c328) (7208c328), 7208c328) isn't the most clever, but works as a standalone concept. The pun itself isn't the most clever, and it's not certain that most people would find it funny.\n\nVideo B (08ec836f) (Video B (08ec836f) (08ec836f), 08ec836f) has more snappy editing and the payoff is a bit more sharp, making it clear to the customer that she needs to tone it down, which is slightly amusing if the reference is known. Seeing someone swear can be funny, but is usually not enough without some type of engaging premise or situation setup beforehand.",
+      "created_at": "2025-12-16T15:36:52.536Z"
+    },
+    {
+      "id": "07owsy6r3ron",
+      "video_a_id": "3642d765-61a8-4bb9-a93f-ac370a377a59",
+      "video_b_id": "ff6e26f5-335e-456c-82c6-e77447d7c4bd",
+      "winner_id": "3642d765-61a8-4bb9-a93f-ac370a377a59",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video A (3642d765) (Video A (3642d765) (3642d765), 3642d765) works as a standalone sketch, but the payoff or structure is a bit tacky. The idea of throwing actual food on the co worker makes the business seem a bit unserious, despite the payoff being a bit funny in theory (extreme response to a normal request). The setup and payoff is too flat.\n\nBut in relation to Video B (ff6e26f5) (Video B (ff6e26f5) (ff6e26f5), ff6e26f5), Video A (3642d765) (Video A (3642d765) (3642d765), 3642d765) actually contains a structure that is useful for someone aiming to recreate the premise for their own profile. Video B (ff6e26f5) (Video B (ff6e26f5) (ff6e26f5), ff6e26f5) is good in itself, but it is an informative video rather than a humorous video. ",
+      "created_at": "2025-12-16T15:38:44.773Z"
+    },
+    {
+      "id": "vhrhtq6aj5e",
+      "video_a_id": "7012ae51-16a9-46c0-9392-4ae41a998c7b",
+      "video_b_id": "7269df3d-3e8d-40cf-a919-b77f9387b724",
+      "winner_id": "7012ae51-16a9-46c0-9392-4ae41a998c7b",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video A (7012ae51) (Video A (7012ae51) (7012ae51), 7012ae51) has a sketch format that contains one payoff, which isn't the most clever but somewhat. Video B (7269df3d) (Video B (7269df3d) (7269df3d), 7269df3d) is more informative or informal, showing to young people just eating and an overlay posing the question if fries or burgers goes Video A (7012ae51) (Video A (7012ae51) (7012ae51), 7012ae51).",
+      "created_at": "2025-12-16T15:39:46.461Z"
+    },
+    {
+      "id": "agf4jk63rqv",
+      "video_a_id": "75b798c1-24c9-4c28-a92d-a24ffc351dc0",
+      "video_b_id": "b91e414c-deb4-4f75-ae6c-f9ca2d1a21a7",
+      "winner_id": "b91e414c-deb4-4f75-ae6c-f9ca2d1a21a7",
+      "dimension": "hook",
+      "confidence": "somewhat",
+      "reasoning": "The text overlay is easier to read and sets the stage with the backdrop and the main character shown entering the scene. Video B (b91e414c) (Video B (b91e414c) (b91e414c), b91e414c) has an interesting perspective (store customer camera) but not as visually engaging.",
+      "created_at": "2025-12-16T15:41:47.095Z"
+    },
+    {
+      "id": "pvcpsb71m88",
+      "video_a_id": "a781b192-4c6a-4130-ae1e-915138972529",
+      "video_b_id": "43dcb57c-9dda-4db9-8055-f7e074978bf3",
+      "winner_id": "a781b192-4c6a-4130-ae1e-915138972529",
+      "dimension": "hook",
+      "confidence": "barely",
+      "reasoning": "Video A (a781b192) (Video A (a781b192) (a781b192), a781b192) has more energy going into the scene, which includes the worker moving quickly through the restaurant with food. Video B (43dcb57c) (Video B (43dcb57c) (43dcb57c), 43dcb57c) shows the background worker simply enjoying himself while his colleague is working hard, creating a funny dynamic but not the most hooky. The composition in both shots (beginning) are both not superb, but both are decent.",
+      "created_at": "2025-12-16T15:43:13.345Z"
+    },
+    {
+      "id": "gu79erjqfv",
+      "video_a_id": "4e4f05e0-a0d8-4dbe-ba0b-7ec526895be5",
+      "video_b_id": "f3ed3256-6f54-4d16-9cab-480d69cd5ebe",
+      "winner_id": "4e4f05e0-a0d8-4dbe-ba0b-7ec526895be5",
+      "dimension": "hook",
+      "confidence": "barely",
+      "reasoning": "Both are somewhat funny and sets the stage for the theme. Video A (4e4f05e0) (Video A (4e4f05e0) (4e4f05e0), 4e4f05e0) sets the premise in simple terms with the text overlay, and Video A (4e4f05e0) (Video A (4e4f05e0) (4e4f05e0), 4e4f05e0) interaction between the cashier and customer begins quite rapidly. Video B (f3ed3256) (Video B (f3ed3256) (f3ed3256), f3ed3256) has a nice backdrop and dessert, but the main character doesn't draw the viewer in.",
+      "created_at": "2025-12-16T15:44:29.568Z"
+    },
+    {
+      "id": "4wjamhl2gk6",
+      "video_a_id": "967f5700-83f6-43c8-aa6e-138cf962c80b",
+      "video_b_id": "44bfe974-26f0-4956-8c8a-f7874357af1c",
+      "winner_id": "44bfe974-26f0-4956-8c8a-f7874357af1c",
+      "dimension": "hook",
+      "confidence": "somewhat",
+      "reasoning": "Video B (44bfe974) (Video B (44bfe974) (44bfe974), 44bfe974) shows some movement, and a clear well composed shot of a girl opening up a pizza box. But after Video A (967f5700) (Video A (967f5700) (967f5700), 967f5700) Video B (44bfe974) (Video B (44bfe974) (44bfe974), 44bfe974), the rest of the clip is a bit slow and not very dynamic. Video A (967f5700) (Video A (967f5700) (967f5700), 967f5700) has a less clear starting shot, and not the best composition or lighting, but gets into the main theme without too much time wasted. But the woman in Video A (967f5700) (Video A (967f5700) (967f5700), 967f5700) clip is attractive which helps.",
+      "created_at": "2025-12-16T15:46:36.170Z"
+    },
+    {
+      "id": "iyav3se369",
+      "video_a_id": "5cfd152d-0eea-4207-a703-c5b4eb1fac7c",
+      "video_b_id": "7b585825-ad83-4893-9e89-3cf360d3a129",
+      "winner_id": "7b585825-ad83-4893-9e89-3cf360d3a129",
+      "dimension": "hook",
+      "confidence": "barely",
+      "reasoning": "The initial shots for both videos are ok. Video A (5cfd152d) (Video A (5cfd152d) (5cfd152d), 5cfd152d) Video B (7b585825) (Video B (7b585825) (7b585825), 7b585825) in Video B (7b585825) (Video B (7b585825) (7b585825), 7b585825) clip is a bit stagnant, not moving quickly or drawing the viewer in. But the shot looks good and the backdrop and composition with characters is good.\n\nVideo A (5cfd152d) (Video A (5cfd152d) (5cfd152d), 5cfd152d) isn't bad either, but there isn't an inherent tempo to Video A (5cfd152d) (Video A (5cfd152d) (5cfd152d), 5cfd152d) beat. The text overlay also takes some time to read, which may not be as hooky as Video B (7b585825) (Video B (7b585825) (7b585825), 7b585825) clip.",
+      "created_at": "2025-12-16T15:48:31.053Z"
+    },
+    {
+      "id": "xe9j1i5d72n",
+      "video_a_id": "7c3d0150-d2ca-40dc-8597-c10cdda9ec72",
+      "video_b_id": "2b709fab-9196-4cee-9cc5-80cdd51425f0",
+      "winner_id": null,
+      "dimension": "hook",
+      "confidence": "barely",
+      "reasoning": "Video A (7c3d0150) (Video A (7c3d0150) (7c3d0150), 7c3d0150) has more of an informative concept, but has movement and is engaging for the viewer. The text overlay and movement forward gives the video some momentum, but the composition isn't the best. Video B (2b709fab) (Video B (2b709fab) (2b709fab), 2b709fab) has good movement, but isn't the most steady and the backdrop/worker playing the role doesn't pull the viewer in.",
+      "created_at": "2025-12-16T15:50:28.396Z"
+    },
+    {
+      "id": "y9dol2u3w3",
+      "video_a_id": "7c3d0150-d2ca-40dc-8597-c10cdda9ec72",
+      "video_b_id": "75b798c1-24c9-4c28-a92d-a24ffc351dc0",
+      "winner_id": "75b798c1-24c9-4c28-a92d-a24ffc351dc0",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both are ok with good movement, and featuring an attractive young person. Video B (75b798c1) (Video B (75b798c1) (75b798c1), 75b798c1) clip is easier to understand and get a sense of the premise Video B (75b798c1) (75b798c1) away. Video A (7c3d0150) (Video A (7c3d0150) (7c3d0150), 7c3d0150), talking about a contest, is perhaps also engaging for a young crowd.",
+      "created_at": "2025-12-16T15:51:26.815Z"
+    },
+    {
+      "id": "gz7r9ofh0d7",
+      "video_a_id": "407ea6ae-24d9-420a-bcae-85f78c7befac",
+      "video_b_id": "42887f4b-7fb7-41be-bb7f-b1acba21ca5d",
+      "winner_id": "407ea6ae-24d9-420a-bcae-85f78c7befac",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video A (407ea6ae) (Video A (407ea6ae) (407ea6ae), 407ea6ae) has an ok opening, where the backdrop isn't the most visually appealing, and the editing not being the most direct and seamless into the sketch. But the attractive young girl helps to keep attention.\n\nVideo B (42887f4b) (Video B (42887f4b) (42887f4b), 42887f4b) doesn't waste time to get into the premise, but the overall colors are a bit unclear which makes the initial setting a bit unclear for the user to understand what they are looking at. There is also not a text overlay clarifying the meaning/premise of the concept.",
+      "created_at": "2025-12-16T15:53:44.708Z"
+    },
+    {
+      "id": "webosl9vew",
+      "video_a_id": "17adcf7a-012b-4add-8191-7f64d8385b80",
+      "video_b_id": "fa76f3de-8650-435f-92d6-fa7a37d8600d",
+      "winner_id": "fa76f3de-8650-435f-92d6-fa7a37d8600d",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "The opening shot of Video B (fa76f3de) (Video B (fa76f3de) (fa76f3de), fa76f3de) is a bit more clean, and well composed with nice clear colors. The actor also looks good and draws the viewer in.",
+      "created_at": "2025-12-16T15:54:56.962Z"
+    },
+    {
+      "id": "g9t0zlyizea",
+      "video_a_id": "80425a1d-0774-48f3-bfa1-81b7f17dbab2",
+      "video_b_id": "a20973fd-80b4-4818-ad9f-1f47ce8fdeff",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video A (80425a1d) (Video A (80425a1d) (80425a1d), 80425a1d) doesn't contain an engaging sketch or premise that has an inherent cleverness or structure that works on it's own. It's not informative per say, but doesn't rely on humor or a similar type of engagement. It's well produced.\n\nVideo B (a20973fd) (Video B (a20973fd) (a20973fd), a20973fd) actually has an engaging premise, and a fun twist, but the execution is not the strongest and the production does not sell or execute on the premise as well as it could.",
+      "created_at": "2025-12-16T15:57:50.308Z"
+    },
+    {
+      "id": "9v7sszajgi9",
+      "video_a_id": "8e16cfa4-6e41-4ae1-ab81-12aa03d53f85",
+      "video_b_id": "441efe36-4f11-4bae-b704-08c7e1c8bbf4",
+      "winner_id": "8e16cfa4-6e41-4ae1-ab81-12aa03d53f85",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both videos have some issues. Video A (8e16cfa4) (Video A (8e16cfa4) (8e16cfa4), 8e16cfa4) is well crafted, but the script isn't the most fun and the pacing in this video is a bit slow. The lines or delivery could be different to sell the premise, which has to do with a misunderstanding in the cash-register that makes the customer think they will get the food cheaper, while it really being a trick played by the staff. The tempo isn't the best, but there is a replicable premise that is somewhat accessible. It's not the most clever, but not bad and can be replicated.\n\nVideo B (441efe36) (Video B (441efe36) (441efe36), 441efe36) has a fun payoff, but the concept is very simple and is a single shot, which makes the concept not the most memorable. The humor gives a short and simple boost but it isn't the most memorable.",
+      "created_at": "2025-12-16T16:00:52.973Z"
+    },
+    {
+      "id": "00dcecdrmf55c",
+      "video_a_id": "60bd19a1-90fa-4f1d-8800-576d5633eb5b",
+      "video_b_id": "82f839c7-4d0b-4943-8365-7f6bc18b3d47",
+      "winner_id": "82f839c7-4d0b-4943-8365-7f6bc18b3d47",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video B (82f839c7) (Video B (82f839c7) (82f839c7), 82f839c7) has a more complete premise and execution than Video A (60bd19a1) (Video A (60bd19a1) (60bd19a1), 60bd19a1). Video B (82f839c7) (Video B (82f839c7) (82f839c7), 82f839c7) sets the premise with a TikTok sound that is somewhat trending, where a countdown goes from 8...1 to 7...1, to 6...1 etcetera. Combined with the visuals showing how money is leaving the owner, this creates an engaging and well made video that keeps engagement. The different shots are well composed and make sense in relation to the bigger message.\n\nVideo A (60bd19a1) (Video A (60bd19a1) (60bd19a1), 60bd19a1) is a bit simpler in it's concept, and is likely easier (or less time consuming) to reproduce. The humor comes from the visuals and the actors expressions.",
+      "created_at": "2025-12-16T16:04:41.048Z"
+    },
+    {
+      "id": "7n8rulnu1lq",
+      "video_a_id": "ae4475cc-054a-4a39-9662-2ff4f668761f",
+      "video_b_id": "610f7e10-34d7-445a-b1d8-7ff58bbda990",
+      "winner_id": "ae4475cc-054a-4a39-9662-2ff4f668761f",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video A (ae4475cc) (Video A (ae4475cc) (ae4475cc), ae4475cc) is amusing and has a sketch structure. It isn't too long, and shows off a dynamic between a couple in a restaurant, where the woman is expecting the man to pay. It's played out in a wholesome and easy going way. The sketch isn't set in a service environment, but the premise can be set in a service environment.\n\nVideo B (610f7e10) (Video B (610f7e10) (610f7e10), 610f7e10) sets up a slightly amusing idea, of a kitchen being hot (which is likely known for restaurant workers), and the worker exclaiming that it's hot as a *** genital. This is a bit vulgar and not a very creative payoff.",
+      "created_at": "2025-12-16T16:07:44.471Z"
+    },
+    {
+      "id": "mk1vptfgrzh",
+      "video_a_id": "1ea5288b-5bc0-458b-b723-61e512de0206",
+      "video_b_id": "db4d53a4-5b56-4be7-bb3f-447cd9cd759a",
+      "winner_id": "db4d53a4-5b56-4be7-bb3f-447cd9cd759a",
+      "dimension": "overall",
+      "confidence": "certain",
+      "reasoning": "Video B (db4d53a4) (Video B (db4d53a4) (db4d53a4), db4d53a4) is much better. The premise is much more clear, and plays on the idea of humans appraising themselves excessively because they enjoy the feeling. The idea of celebrating doing the job well is funny, implying that status comes from doing mundane or simple things well. Enjoyment comes from the visuals and absurdist implications of what's being said.\n\nVideo A (1ea5288b) (Video A (1ea5288b) (1ea5288b), 1ea5288b) in contrast doesn't say anything in particular, and relies on good editing. But in my eyes, that doesn't make a sketch and the script doesn't have a lot of standalone ability to be replicated.",
+      "created_at": "2025-12-16T16:12:07.555Z"
+    },
+    {
+      "id": "w7egmc33pg8",
+      "video_a_id": "185a486a-a923-4513-84cd-51b0bd0f8a5d",
+      "video_b_id": "2d05eec7-7eaf-453f-88ed-942688e2c5cb",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both are ok and take different forms and cater to different audiences. Video A (185a486a) (Video A (185a486a) (185a486a), 185a486a) is catering to slightly more developed audience, teenagers and young adults that are drawn into the cooler and more chic/attractive clothing/backdrop. The premise around being annoyed by customers, and the visual story being told, has somewhat of a clever structure.\n\nVideo B (2d05eec7) (Video B (2d05eec7) (2d05eec7), 2d05eec7) is a bit more wholesome and family oriented, painting the adult man in the sketch as a child seeking comfort from his mother (but in this case it's a woman assumed to be his wife. This script isn't the most clever, but it caters well towards its target audience which I assume to be younger kids 10-16 and more wholesome family oriented viewers.",
+      "created_at": "2025-12-16T16:27:56.659Z"
+    },
+    {
+      "id": "n9bwbowz2dq",
+      "video_a_id": "7abe3bb9-aa31-4154-923a-4c54a42f12e6",
+      "video_b_id": "f3ed3256-6f54-4d16-9cab-480d69cd5ebe",
+      "winner_id": "f3ed3256-6f54-4d16-9cab-480d69cd5ebe",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video B (f3ed3256) (Video B (f3ed3256) (f3ed3256), f3ed3256) has a more clever setup and the theme is a bit more accessible/not too vulgar/lowbrow. Video A (7abe3bb9) (Video A (7abe3bb9) (7abe3bb9), 7abe3bb9) feels like a caustic female worker talking about how men/boys are annoying, and Video B (f3ed3256) (Video B (f3ed3256) (f3ed3256), f3ed3256) takes a more friendly and very safe approach to humor. Video B (f3ed3256) (Video B (f3ed3256) (f3ed3256), f3ed3256) sketch actually has a somewhat clever premise/idea, but the editing and pacing is a little bit slow and takes to long to get to the point. The payoff is also not the best.",
+      "created_at": "2025-12-16T16:29:51.114Z"
+    },
+    {
+      "id": "0r34nbk1f34s",
+      "video_a_id": "540a7d2a-3916-4f6f-b3e0-9d06db021a0d",
+      "video_b_id": "ff57932e-7537-493d-8cba-187d36761263",
+      "winner_id": "ff57932e-7537-493d-8cba-187d36761263",
+      "dimension": "overall",
+      "confidence": "certain",
+      "reasoning": "Video B (ff57932e) (Video B (ff57932e) (ff57932e), ff57932e) sketch is really good. It has good pacing, it covers a fun theme and has a nice visual payoff in the end. Many service businesses can likely replicate this sketch in their own language, sitting in the facility and it's not too hard to replicate.\n\nVideo A (540a7d2a) (Video A (540a7d2a) (540a7d2a), 540a7d2a) isn't terrible, but doesn't have a setup as engaging or memorable.",
+      "created_at": "2025-12-16T16:31:18.903Z"
+    },
+    {
+      "id": "mwhzzwinro",
+      "video_a_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "video_b_id": "1ea5288b-5bc0-458b-b723-61e512de0206",
+      "winner_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video A (f530b678) (Video A (f530b678) (f530b678), f530b678) has a premise that can be replicated. The series of strange tasks being performed fits well into the core premise. It's not the most creative, and plays on a premise of \"a worker being in trouble\", which isn't the most fun, but overall acceptable.\n\nVideo B (1ea5288b) (Video B (1ea5288b) (1ea5288b), 1ea5288b) has good editing, a sketch structure, but doesn't have a clear idea or fun development. It's a bit surreal and doesn't really say anything.",
+      "created_at": "2025-12-16T16:33:00.218Z"
+    },
+    {
+      "id": "e4qws6tufm",
+      "video_a_id": "7c3d0150-d2ca-40dc-8597-c10cdda9ec72",
+      "video_b_id": "db4d53a4-5b56-4be7-bb3f-447cd9cd759a",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video B (db4d53a4) (Video B (db4d53a4) (db4d53a4), db4d53a4) has an interesting and engaging premise, but relies on a meme edited in, which makes the clip a bit less replicable. Video A (7c3d0150) (Video A (7c3d0150) (7c3d0150), 7c3d0150) reads as an informative clip, instead of a humorous premise. Both are ok, but not the most useful for a similar business aiming to replicate the premise.",
+      "created_at": "2025-12-16T16:37:06.197Z"
+    },
+    {
+      "id": "lt1dvt4y8b",
+      "video_a_id": "69e4bbea-5f77-4785-bf06-40119eab25b0",
+      "video_b_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "winner_id": "580e13cf-e861-4c47-a98c-ea2c65438637",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both of these videos are very simple. The humor is simple an accessible in both, and can be deemed slightly amusing for many people, not expecting too much drama or extreme ideas. Video B (580e13cf) (Video B (580e13cf) (580e13cf), 580e13cf) has a pun that is somewhat clever, making the Video A (69e4bbea) bit clever in general. Video B (580e13cf) (Video B (580e13cf) (580e13cf), 580e13cf) has joke that is presented in text, that are somewhat amusing but also somewhat safe.",
+      "created_at": "2025-12-16T16:39:31.320Z"
+    },
+    {
+      "id": "s88n3za2oc7",
+      "video_a_id": "e8f32302-0ada-4c34-b1cc-60a4bd5b3604",
+      "video_b_id": "4d9d182f-2b03-4eed-8e2a-6231638d283b",
+      "winner_id": "4d9d182f-2b03-4eed-8e2a-6231638d283b",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Video B (4d9d182f) (Video B (4d9d182f) (4d9d182f), 4d9d182f) is funnier than Video A (e8f32302) (Video A (e8f32302) (e8f32302), e8f32302), showing an unexpected human behaviour that results in a physical payoff. For any service business aiming to replicate the theme, it would have to use some other type of item, not desserts, if the service business in itself isn't a dessert/café vendor. The premise is quite simple and isn't the most clever, but the execution is fun.\n\nVideo A (e8f32302) (Video A (e8f32302) (e8f32302), e8f32302) is likely a bit more replicable, but puts the business in a somewhat casual and unprofessional light. The issue with this is that it cheapens the overall feeling towards the brand - conflating personal life with a really professional part of the business (the kitchen). This makes the sketch not the best, and there isn't a clever idea there other than the visual appeal of seeing a different view.",
+      "created_at": "2025-12-16T16:43:30.685Z"
+    },
+    {
+      "id": "vbv6ce4ja7r",
+      "video_a_id": "44bfe974-26f0-4956-8c8a-f7874357af1c",
+      "video_b_id": "4422d8e6-3580-4e4c-a3f7-345b13d667fa",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both premises are ok, with scripts that keep the viewer somewhat engaged and has a slow payoff structure, without a clear payoff in either video. Rather it slowly moves deeper into absurdism with each shot. Video B (4422d8e6) (Video B (4422d8e6) (4422d8e6), 4422d8e6) is a bit more edgy, making the worker seem like a crazy person that mocks the customer who is simply shown to be enjoying herself. The humor is a bit edgy, and that could likely make it a bit more engaging than other types of content. But it becomes a bit much, as the \"fun\" aspect of the clip has to do with the workers reaction that is a bit extreme.\n\nVideo A (44bfe974) (Video A (44bfe974) (44bfe974), 44bfe974) clip has a simple dialogue structure, and doesn't have sharp editing or dynamic perspectives that keep the engagement going. It relies on a script that is amusing, but it's more of a slow dialogue type premise where the amusement comes from the two characters disagreeing. It's not strictly premise-heavy, so the overall engagement hangs on the dialogue.\n\nOverall, both clips are ok and Video A (44bfe974) (Video A (44bfe974) (44bfe974), 44bfe974) clip could likely be replicated, but it's focused around pizza since the script makes a point about how the pizza is sold.\n\nVideo B (4422d8e6) (Video B (4422d8e6) (4422d8e6), 4422d8e6) clip could perhaps work but it would have to be made shorter and perhaps less strange/dramatic.",
+      "created_at": "2025-12-16T16:49:19.871Z"
+    }
+  ],
+  "cluster_corrections": [],
+  "hidden_variables": [],
+  "weights": {
+    "audience_alignment": 0.43,
+    "tone_personality_match": 0.23,
+    "format_appropriateness": 0.48,
+    "aspiration_alignment": 1,
+    "custom_dimensions": {}
+  },
+  "stats": {
+    "total_comparisons": 48,
+    "by_dimension": {
+      "overall": 42,
+      "hook": 6
+    },
+    "video_count": 0,
+    "rated_count": 0,
+    "average_score": 0
+  },
+  "clusters": []
+}

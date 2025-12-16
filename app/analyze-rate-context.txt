@@ -1,0 +1,8 @@
+# Key features in analyze-rate-v1:
+
+Full signal extraction UI with structured fields
+Replicability signals (actor count, setup complexity, skill required, equipment)
+Content density signals (setting type, space requirements, lighting)
+Audience signals (age range, income level, lifestyle tags, vibe alignment)
+Production quality signals
+Human override capability (saves to human_overrides JSONB)

@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "comparisons": [
+    {
+      "id": "9a6ps746rp",
+      "video_a_id": "8e649975-f660-442c-8581-eabaa335a26d",
+      "video_b_id": "59fd28df-beda-45de-b490-6ca050893333",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "The content types are different. One is a slightly amusing and entertaining video (making the latté), that isn't exactly humorous but has a low energy flow to it, where the viewer may find it amusing to see a customer trying to make a latté. The other video has a format that is more accessible and easy to replicate, but also requires to have a good story, since the one retold in the video is specific to what the person is saying.",
+      "created_at": "2025-12-16T14:09:06.928Z"
+    },
+    {
+      "id": "h16d4zpsxr8",
+      "video_a_id": "69e4bbea-5f77-4785-bf06-40119eab25b0",
+      "video_b_id": "da6815da-5a1f-48bc-a3ad-69f0757377cc",
+      "winner_id": "da6815da-5a1f-48bc-a3ad-69f0757377cc",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "The first video is easier to replicate, but the humour in itself is very simple and not the most amusing. The second video is harder to replicate, but has a more engaging and creative premise. The video of the barista requires some animated acting, which he does well. The acting in the first video is slightly less amusing.",
+      "created_at": "2025-12-16T14:11:20.442Z"
+    },
+    {
+      "id": "ikbygwb93g",
+      "video_a_id": "cf783359-047d-4e6d-bf7e-8af7ef0d0f6a",
+      "video_b_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "winner_id": "cf783359-047d-4e6d-bf7e-8af7ef0d0f6a",
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "The first video has more engaging and fast paced editing, as well as a more engaging and creative premise. Both are playing on absurdism, but the first video has a tempo and also young attractive women playing out the sketch. The first one has a more fun premise, and the result of the misunderstanding is more fun than the other. ",
+      "created_at": "2025-12-16T14:14:21.506Z"
+    },
+    {
+      "id": "famcddudcmi",
+      "video_a_id": "42887f4b-7fb7-41be-bb7f-b1acba21ca5d",
+      "video_b_id": "ffbc9f08-7c9f-4031-bdd3-2f26e15266a0",
+      "winner_id": "42887f4b-7fb7-41be-bb7f-b1acba21ca5d",
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Both are somewhat amusing, but the premise in Video A (42887f4b) (Video A (42887f4b) (42887f4b), 42887f4b) (Steve's poke) is more clever. The idea of proposing with that type of camera reveal is clever. Video B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08) has a somewhat amusing premise, but the payoff isn't very strong in itself (The cashier taking the card due to feeling annoyed). Video B (ffbc9f08) (Video B (ffbc9f08) (ffbc9f08), ffbc9f08) is likely more replicable, since Video A (42887f4b) (Video A (42887f4b) (42887f4b), 42887f4b) needs to replace the product in question.",
+      "created_at": "2025-12-16T14:17:46.047Z"
+    },
+    {
+      "id": "leoet66i17b",
+      "video_a_id": "8e649975-f660-442c-8581-eabaa335a26d",
+      "video_b_id": "0c3565fa-9cc4-45f6-a868-4a2ce416b3ab",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "barely",
+      "reasoning": "Video A (8e649975) (Video A (8e649975) (8e649975), 8e649975) featuring the barista is somewhat amusing, but isn't very humorous. It has a slow paced entertainment value, where the viewer wants to see how well the \"customer\" does a latté, which I assume is engaging for some viewers. Video B (0c3565fa) (Video B (0c3565fa) (0c3565fa), 0c3565fa) has the make up of a somewhat strong premise, but isn't very funny in the end. The idea of asking co workers in order to hurry up, ending with clapping, and seeing the customers confusion, isn't a very funny payoff. But the absurdism is there, just not performed great. No one stands out as very good.",
+      "created_at": "2025-12-16T14:20:10.430Z"
+    },
+    {
+      "id": "7la5tcjpbpa",
+      "video_a_id": "f530b678-6055-4d89-8775-39a3c6190d20",
+      "video_b_id": "36912289-7df1-4da6-a4b0-eb07ab66af25",
+      "winner_id": null,
+      "dimension": "overall",
+      "confidence": "somewhat",
+      "reasoning": "Both videos are amusing, and playing on simple observations/scenarios that has a visual feedback that is absurdist. Video A (f530b678) (Video A (f530b678) (f530b678), f530b678) has a slightly amusing premise, showing how a young employee will hide from a potentially tough discussion with his manager, and showing the unrealistic distracting tasks the person does to avoid the discussion. Video B (36912289) (Video B (36912289) (36912289), 36912289) has a similar premise, which is likely equally or slightly less fun on it's own, but is edited in a more engaging way. The actress (worker) in Video B (36912289) (Video B (36912289) (36912289), 36912289) is also a bit more animated, and more attractive which helps with engagement.",
+      "created_at": "2025-12-16T14:24:08.538Z"
+    }
+  ],
+  "cluster_corrections": [],
+  "hidden_variables": [],
+  "weights": {
+    "audience_alignment": 0.43,
+    "tone_personality_match": 0.23,
+    "format_appropriateness": 0.48,
+    "aspiration_alignment": 1,
+    "custom_dimensions": {}
+  },
+  "stats": {
+    "total_comparisons": 6,
+    "by_dimension": {
+      "overall": 6
+    },
+    "video_count": 0,
+    "rated_count": 0,
+    "average_score": 0
+  },
+  "clusters": []
+}
