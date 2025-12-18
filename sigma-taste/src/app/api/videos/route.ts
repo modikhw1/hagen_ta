@@ -20,12 +20,28 @@ export async function GET() {
       const rawData = JSON.parse(fs.readFileSync(datasetPath, 'utf-8'));
       
       // The JSON has a wrapper: { exportedAt, source, totalVideos, videos: [...] }
-      const videos = rawData.videos || rawData;
+      const rawVideos = rawData.videos || rawData;
       
-      console.log('Loaded', Array.isArray(videos) ? videos.length : 0, 'videos');
+      // Normalize video data: map visual_analysis -> deep_analysis for consistency
+      const videos = (Array.isArray(rawVideos) ? rawVideos : []).map((video: any) => {
+        // Map visual_analysis to deep_analysis if needed
+        if (video.visual_analysis && !video.deep_analysis) {
+          return {
+            ...video,
+            deep_analysis: video.visual_analysis,
+          };
+        }
+        return video;
+      });
+      
+      console.log('Loaded', videos.length, 'videos');
       if (rawData.videosWithSignedUrls) {
         console.log('  -', rawData.videosWithSignedUrls, 'with signed URLs');
       }
+      
+      // Check how many have deep_analysis
+      const withAnalysis = videos.filter((v: any) => v.deep_analysis).length;
+      console.log('  -', withAnalysis, 'with deep_analysis');
       
       return NextResponse.json(videos);
     }

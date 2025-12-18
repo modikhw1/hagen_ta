@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { useSigmaTasteStore } from '@/store/sigma-taste-store';
+import { parseFileContent, matchComparisonsWithVideos } from '@/lib/dataLoader';
 import type { Video } from '@/types';
 import {
   GitCompare,
@@ -14,7 +15,9 @@ import {
   TrendingUp,
   Lightbulb,
   ArrowRight,
-  Eye
+  Eye,
+  FileJson,
+  BarChart3,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -23,11 +26,15 @@ export default function HomePage() {
     comparisons, 
     clusterCorrections,
     hiddenVariables,
-    setVideos 
+    setVideos,
+    importComparisons,
+    importVideos,
   } = useSigmaTasteStore();
   
   const [loading, setLoading] = useState(false);
   const [dataLoaded, setDataLoaded] = useState(false);
+  const [importStatus, setImportStatus] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   
   const loadVideos = async () => {
     setLoading(true);
@@ -44,6 +51,47 @@ export default function HomePage() {
       console.error('Error loading videos:', error);
     }
     setLoading(false);
+  };
+  
+  const handleFileImport = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    
+    setLoading(true);
+    setImportStatus(null);
+    
+    try {
+      const content = await file.text();
+      const parsed = parseFileContent(content);
+      
+      let statusParts: string[] = [];
+      
+      if (parsed.videos && parsed.videos.length > 0) {
+        importVideos(parsed.videos, true);
+        statusParts.push(`${parsed.videos.length} videos`);
+      }
+      
+      if (parsed.comparisons && parsed.comparisons.length > 0) {
+        importComparisons(parsed.comparisons, true);
+        statusParts.push(`${parsed.comparisons.length} comparisons`);
+      }
+      
+      if (statusParts.length > 0) {
+        setImportStatus(`Imported ${statusParts.join(' and ')}`);
+        setDataLoaded(true);
+      } else {
+        setImportStatus('No valid data found in file');
+      }
+    } catch (error) {
+      console.error('Import error:', error);
+      setImportStatus('Error importing file');
+    }
+    
+    setLoading(false);
+    // Reset file input
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
   };
   
   useEffect(() => {
@@ -98,23 +146,46 @@ export default function HomePage() {
                 </h2>
                 <p className="text-sm text-zinc-400">
                   {dataLoaded 
-                    ? `${ratedVideos.length} with human ratings`
+                    ? `${ratedVideos.length} with human ratings • ${comparisons.length} comparisons`
                     : 'Load your dataset to begin'
                   }
                 </p>
+                {importStatus && (
+                  <p className="text-sm text-green-400 mt-1">{importStatus}</p>
+                )}
               </div>
             </div>
             
-            {!dataLoaded && (
-              <button
-                onClick={loadVideos}
-                disabled={loading}
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-500 disabled:bg-zinc-700 
-                           rounded-lg font-medium flex items-center gap-2"
+            <div className="flex items-center gap-3">
+              {/* File Import */}
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".json"
+                onChange={handleFileImport}
+                className="hidden"
+                id="file-import"
+              />
+              <label
+                htmlFor="file-import"
+                className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg font-medium 
+                           flex items-center gap-2 cursor-pointer text-sm"
               >
-                {loading ? 'Loading...' : 'Load Dataset'}
-              </button>
-            )}
+                <FileJson className="w-4 h-4" />
+                Import JSON
+              </label>
+              
+              {!dataLoaded && (
+                <button
+                  onClick={loadVideos}
+                  disabled={loading}
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-500 disabled:bg-zinc-700 
+                             rounded-lg font-medium flex items-center gap-2 text-sm"
+                >
+                  {loading ? 'Loading...' : 'Load from API'}
+                </button>
+              )}
+            </div>
           </div>
           
           {dataLoaded && (
@@ -188,6 +259,32 @@ export default function HomePage() {
               Compare video pairs to reveal subtle preferences. &quot;Which is better?&quot; 
               captures what absolute scores miss.
             </p>
+            <span className="inline-block mt-2 px-2 py-1 bg-blue-500/20 text-blue-400 
+                             text-xs rounded-full">
+              {comparisons.length} / 500 target
+            </span>
+          </Link>
+          
+          <Link 
+            href="/insights"
+            className="group bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800/80 transition-all border border-purple-500/30"
+          >
+            <div className="flex items-start justify-between mb-4">
+              <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                <BarChart3 className="w-6 h-6 text-purple-400" />
+              </div>
+              <ArrowRight className="w-5 h-5 text-zinc-600 group-hover:text-zinc-400 
+                                     group-hover:translate-x-1 transition-all" />
+            </div>
+            <h3 className="text-lg font-semibold mb-1">Variable Insights</h3>
+            <p className="text-sm text-zinc-400">
+              Analyze which AI variables predict your preferences, find gaps, 
+              and discover hidden dimensions.
+            </p>
+            <span className="inline-block mt-2 px-2 py-1 bg-purple-500/20 text-purple-400 
+                             text-xs rounded-full">
+              NEW
+            </span>
           </Link>
           
           <Link 

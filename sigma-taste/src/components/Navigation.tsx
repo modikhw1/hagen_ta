@@ -8,7 +8,8 @@ import {
   Network,
   AlertTriangle,
   Sliders,
-  Download
+  Download,
+  BarChart3
 } from 'lucide-react';
 import { useSigmaTasteStore } from '@/store/sigma-taste-store';
 import { createExport, downloadJson } from '@/lib/utils';
@@ -16,6 +17,7 @@ import { createExport, downloadJson } from '@/lib/utils';
 const navItems = [
   { href: '/', label: 'Dashboard', icon: Home },
   { href: '/compare', label: 'Compare', icon: GitCompare },
+  { href: '/insights', label: 'Insights', icon: BarChart3 },
   { href: '/clusters', label: 'Clusters', icon: Network },
   { href: '/adversarial', label: 'Adversarial', icon: AlertTriangle },
   { href: '/calibrate', label: 'Calibrate', icon: Sliders },

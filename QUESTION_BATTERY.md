@@ -200,7 +200,7 @@ When you say something is "creative" or "more original," what do you actually me
 ```
 Can you describe what makes a video premise feel "clever" vs "obvious"?
 
-Different people have different propensities to what they find amusing. If someone is very simple or not comedically adjusted to extreme/absurdist/subtle types of humor, then a simple scenario or simple dialogue can go a long way. In the two clips you described, the first video of someone being interrupted by a customer, before eating, is a fairly "simple" premise. It's something that doesn't win any prices of unique setups, or trying to "say anything", or take a position or show off a certain personality trait. It's a common scenario, people understand it and it doesn't contain a lot of interesting aspects, but it can be amusing for people who like simple stuff.
+Different people have different propensities to what they find amusing. If someone is very simple or not comedically adjusted to extreme/absurdist/subtle types of humor, then a simple scenario or simple dialogue can go a long way. In the two clips you described, the first video of someone being interrupted by a customer, before eating, is a fairly "simple" premise. It's something that doesn't win any prizes of unique setups, or trying to "say anything", or take a position or show off a certain personality trait. It's a common scenario, people understand it and it doesn't contain a lot of interesting aspects, but it can be amusing for people who like simple stuff.
 
 The second video is also within the safe realm, but has more cleverness to it due to implying that the story is set in another dimension, first eating some dessert, and then being alluded to being in a dream-state, where the two colleagues are in a car and the person eating dessert was biting his friend's arm. This has some more creativity to it.
 
@@ -298,6 +298,9 @@ When a funny premise doesn't land, what usually fails?
 ```
 Describe a video that had a good premise but failed in execution:
 _____________________________________________________________________________
+
+I'll give another answer. It's not about the type, despite it being useful information to know what types of humor tend to work. Rather, every type can be fun, and the makeup of what makes it good will depend on what is happening in the sketch.
+
 _____________________________________________________________________________
 ```
 
@@ -312,9 +315,11 @@ What makes a comedic premise feel "clever" vs just "funny"?
 
 ```
 Your answer:
-_____________________________________________________________________________
-_____________________________________________________________________________
-_____________________________________________________________________________
+
+Cleverness will usually feel like a postive surprise, in the sense that it feels a bit too smart or well-thought out while in most cases seeming effortless. A clever script would go against expectations, while perhaps assuming a cultural trope inside or implying a backstory/dynamic that is read between the lines. In the sketch "75b798c1", there is a simple premise of a worker checking in with her colleagues after a stressful shift. It turns out tha one of the workers is actually shell-shocked, that is portrayed by the worker being completely frozen filling up a cup with soft drinks, overflowing. This type of reveal both plays on the premise, as well as a trope of a war squad handling their emotions after a tough fight. This is clever and reveals the "payoff" visually, which is fun and unexpected.
+
+Funny is usually something that feels unexpected and absurd.
+
 ```
 
 ---
@@ -366,6 +371,9 @@ When you describe a "strong payoff," what are you actually evaluating?
 ```
 Can you describe what a "weak payoff" feels like?
 _____________________________________________________________________________
+
+In this context, a weaker payoff would contain a simple or obvious "closure" of the context/premise. For example TikTok-trend sounds, that can contain the punchline with a pre-recorded dub. If the payoff is too abstract or unclear, it's not good either. A weak payoff can also come from making the ending too obvious, or using a trope that has a known beginning, middle and end.
+
 _____________________________________________________________________________
 ```
 
@@ -380,12 +388,16 @@ What's the ideal relationship between setup length and payoff magnitude?
 - [ ] Short setup → punchy payoff (efficiency)
 - [ ] Longer setup → bigger payoff (investment rewarded)
 - [ ] Setup and payoff should feel proportional
-- [ ] It depends on the content type
+- [x] It depends on the content type
 - [ ] I don't think in these terms
 
 ```
 When does a setup feel "earned" vs "wasted time"?
 _____________________________________________________________________________
+
+Length doesn't exactly correlated with payoff. I prefer content being between 7-25 seconds long. If the premise isn't built up properly, or interesting, the engagement will drop. One can assume that premises, and it's relative interestingness, will depend on the target audience to some degree, although many premises and absurdist ideas will be deemed good/intelligent/fun for a vast amount of people.
+
+A payoff doesn't need to be "punchy" as in high energy, but it usually comes from closing off the theme with a meaningful ending. Some of the short form concepts, between 3-10 seconds, will establish the idea early with a text overlay and give a big "in your face" type payoff. This type of sketch isn't very memorable due to it not holding anything of value, it doesn't stimulate. Comparing it to fast food, it can be delicious in the initial bite, but doesn't contain a lot of nutrition and feels flat/empty when considering it.
 _____________________________________________________________________________
 ```
 
@@ -427,13 +439,16 @@ When you prefer "faster pacing," what are you actually responding to?
 
 - [ ] More happens per second (information density)
 - [ ] No dead time/filler
-- [ ] Energy/momentum feeling
-- [ ] Quick comedic timing
-- [ ] Something else: ________________
+- [ x ] Energy/momentum feeling
+- [ x ] Quick comedic timing
+- [ x ] Something else: if there is intention behind the editing, it signals professionalism or focus = quality.
 
 ```
 Is there such thing as "too fast"? What would that look like?
 _____________________________________________________________________________
+
+Too fast would within σTaste include content that is hard to replicate, due to the editing being hard to perform well. If it's a piece of content that leans a lot on editing to make the concept work, it's a bit harder to replicate. For comedic videos, a nice slow, or nice fast tempo, will be good. If theres too much editing, it's trickier to replicate for an average business owner, unless they have a content team at hand. It's also a bit more jarring to watch.
+
 _____________________________________________________________________________
 ```
 
@@ -445,13 +460,13 @@ When you evaluate "production quality," which elements matter most?
 
 Rate each 1-5 (1=don't care, 5=matters a lot):
 
-- [ ] Image resolution/clarity ___
-- [ ] Lighting quality ___
-- [ ] Audio clarity ___
-- [ ] Editing sophistication ___
-- [ ] Camera work/framing ___
-- [ ] Overall "polish" feeling ___
-- [ ] Color grading ___
+- [ ] Image resolution/clarity 5
+- [ ] Lighting quality 4
+- [ ] Audio clarity 4
+- [ ] Editing sophistication 4
+- [ ] Camera work/framing 4
+- [ ] Overall "polish" feeling 4
+- [ ] Color grading 3
 
 ---
 
@@ -470,7 +485,15 @@ What makes a video feel like it "flows" well vs feeling disjointed?
 ```
 Your answer:
 _____________________________________________________________________________
-_____________________________________________________________________________
+
+When a premise is set, it's usually important to have the sketch/concept move in a straight direction. Sometimes this means to incrementally heighten the emotional resonance, by taking a joke further and further. Or if it's an implied story, having the story move forwards with new developments, but doing so in a steady fashion. Just like any storytelling framework, it would work the same.
+
+In a video context, this storytelling or taking the joke further can sometimes rely on just changing shots, showing more and more examples of a strange situation. In one sketch, the premise is that a worker is making mistakes due to her manager looking closely. What makes that clip somewhat engaging is seeing new shots of her making mistakes, where the engaging aspect is seeing unique shots of 'how' those absurdist mistakes look. It doesn't "build" in momentum, but creates a steady stream of seeing the next thing, then next thing.
+
+When it contains dialogue, it's useful that the dialogue builds towards a climax, or not overstaying on a single beat. One of my favorite sketches, that contain a high σTaste (ff57932e), shows a dialogue between two people at a restaurant, arguing about who is going to pay.
+
+It cuts between a man and a woman, disagreeing. The woman insists the man pays, and the dialogue gets more and more dynamic/high energy, where the woman tries more and more ways to convince the man. In the end, a camera cut shows that the man and woman sit by different tables, yelling across the restaurant, with the man exclaiming "I'm not going to pay, I don't even know you". Making the punchline absurdist in that the woman would expect the man to pay, which doesn't make sense. Through the video, it's assumed they are together, making the punchline funny, unexpected, and a pleasant surprise.
+
 _____________________________________________________________________________
 ```
 
@@ -483,13 +506,18 @@ From your notes:
 How much does the performer's execution matter vs the premise itself?
 
 - [ ] Premise is 80%+, performer is secondary
-- [ ] About 50/50
-- [ ] Performer can elevate or kill a premise significantly
+- [ X ] About 50/50
+- [ X ] Performer can elevate or kill a premise significantly
 - [ ] Great performer can make weak premise work
 
 ```
 What makes someone "good" at performing short-form comedy?
 _____________________________________________________________________________
+
+It depends on the sketch. If it's an absurdist idea, it's useful for the person to understand their voice as an actor, and what is implied about the person. Depending on how the person plays out the sketch, a certain demeanor or attitude is helpful to make the sketch work.
+
+In some sketches, featuring physical comedy (Falling over in an exaggerated way), or looking annoyed, it's good to have animated facial expressions or a willingness to take "social risks", meaning that it's ok to show personality, or being a butt of a joke. If the person in question does not "sell" the concept, due to not matching the implied emotional undertones, it can fall flat. This is why I mention that some premises need animated acting, as it won't be replicated to the same effect if it's not done right.
+
 _____________________________________________________________________________
 ```
 
@@ -501,12 +529,19 @@ Based on the AI assessments you've seen in this document, how accurate do they f
 
 - [ ] Surprisingly accurate - AI gets it
 - [ ] Directionally right - scores correlate but aren't precise
-- [ ] Often wrong - I disagree with many assessments
-- [ ] Mixed - accurate on some dimensions, wrong on others
+- [ X ] Often wrong - I disagree with many assessments
+- [ X ] Mixed - accurate on some dimensions, wrong on others
 
 ```
 Which AI assessment type feels most/least reliable?
 _____________________________________________________________________________
+
+I feel like it gets some of the contextual stuff well, when prompted into looking for those values. In the current data learning model, I am directing it into how to search for meaning or describe certain values. The aim is for it to describe scenes, or underlying meaning, accurately.
+
+Any metric that is a number, for example "creativity", is a bit trickier. This is partly what I hoped to do with video ratings, to establish what content I found to be creative, and the opposite. The model needs to find it's own understanding at the time of analysis, using Vertex. Overall, it seems like the Vertex model cant reliably capture subjective values well, especially assuming there is a "neutral" analysis that doesn't mean σTaste, which is what my priority is, to get the model to both capture neutral data or "objective" which in many cases doesn't mean anything (creativity is maybe subjective, but many may agree something is more or less creative), as well as learning what is relevant to bridge the gap to σTaste.
+
+The most reliable is objective values, I think production value, editing speed, even "hookStrength", can be found. The assumption is that Google Gemini Vertex uses Youtube video data, which means that any AI drawn insights that can be assumed to be accessible for Google data scientists can also be found with the analytics tool.
+
 _____________________________________________________________________________
 ```
 
@@ -520,8 +555,16 @@ After going through these questions, what new understanding do you have about yo
 ```
 Your answer:
 _____________________________________________________________________________
-_____________________________________________________________________________
-_____________________________________________________________________________
+
+I think one important thing is to capture or realize is that content will be deemed good on utility, and not always what is objectively so. I use language as good or bad, when taste is subjective. The σTaste metric combines both what's good for the hagen core service (what will sell), as well as subjective taste in regards to what I feel is good content to go on the service. Not about finding the most virality, or make most money, which are to values that are somewhat clear and to the point. 
+
+One thing that one can say about this point as well is that: Some of the types of content that is uploaded to the initial hagen deep analysis, is simply content that isn't the "type" that is looked for. It can be an informative video with entertaining factors, or an interview style setup "we are asking x questions today", or a visually focused video montage, etc. If the data model assumes that most of these clips are within the same categorization, it would mean that
+
+Good - works in the context of the service, has σTaste
+Bad - low quality content in the context of the service, has low σTaste
+Bad - not relevant content in the context of the service, has low σTaste
+Bad - low quality and not relevant content in the context of the service, has low σTaste
+
 _____________________________________________________________________________
 ```
 
@@ -531,7 +574,11 @@ Is there something important to your content judgment that wasn't captured anywh
 ```
 Your answer:
 _____________________________________________________________________________
-_____________________________________________________________________________
+
+I honestly want the model to begin by understanding the full conceptual ideas in the selected pieces of content, as a human would. When this is done, a type of understanding of what constitues creativity, originality, engagement, quality of trope etc could lay the groundwork for a ranking system. Perhaps feeding into it quality data for comparison.
+
+Any type of other type of σTaste metric, such as replicability, would perhaps have some "human" level understandings, as "how hard it is to replicate", but other rules, such as length, type of content, production, could use some of the current metrics as the foundation.
+
 _____________________________________________________________________________
 ```
 
@@ -541,6 +588,11 @@ If you could add ONE new variable to the analysis model, what would it be?
 ```
 Your answer:
 _____________________________________________________________________________
+
+I would consider there to be strata - meaning that there would be multiple layers/filters that make the video fit within a certain context, where within that strata, the can be sideways comparisons (as good, same type, maybe different category) or up/down (less good, same type, maybe different category).
+
+Within each strata, there are expectations and collective variable building that assumes certain things. These strata hold subjective values, but also some foundational structural ideas.
+
 _____________________________________________________________________________
 ```
 

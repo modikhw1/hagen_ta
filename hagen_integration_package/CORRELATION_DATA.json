@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "generated": "2025-12-18",
+    "source": "hagen_ta comparison analysis",
+    "total_comparisons": 254,
+    "comparisons_with_decisions": 221,
+    "comparisons_with_notes": 106,
+    "unique_videos": 119,
+    "methodology": "Weighted Pearson correlation with confidence weighting (certain=1.0, somewhat=0.7, barely=0.4)"
+  },
+  "top_predictors": [
+    {
+      "variable": "engagement.attentionRetention",
+      "correlation": 0.173,
+      "direction": "positive",
+      "interpretation": "Strongest predictor - sustained engagement wins over flashy hooks",
+      "recommended_weight_multiplier": 2.0
+    },
+    {
+      "variable": "audio.quality",
+      "correlation": 0.169,
+      "direction": "positive",
+      "interpretation": "2nd strongest - often unnoticed consciously but powerful",
+      "recommended_weight_multiplier": 1.8
+    },
+    {
+      "variable": "technical.cutsPerMinute",
+      "correlation": 0.129,
+      "direction": "positive",
+      "interpretation": "Fast, intentional editing preferred",
+      "recommended_weight_multiplier": 1.5
+    },
+    {
+      "variable": "script.originality.score",
+      "correlation": 0.123,
+      "direction": "positive",
+      "interpretation": "Novelty matters - creativity valued over formula",
+      "recommended_weight_multiplier": 1.4
+    }
+  ],
+  "negative_predictors": [
+    {
+      "variable": "visual.hookStrength",
+      "correlation": -0.047,
+      "direction": "negative",
+      "interpretation": "Flashy hooks hurt preference - desperation signal",
+      "recommended_weight_multiplier": 0.5,
+      "note": "Replace with nuanced hook_analysis in v1.1"
+    }
+  ],
+  "weak_signals": [
+    {
+      "variable": "script.replicability.score",
+      "correlation": 0.033,
+      "direction": "near_zero",
+      "interpretation": "Heavily discussed in notes but doesn't predict preference",
+      "recommended_weight_multiplier": 0.7,
+      "note": "Decompose into sub-factors in v1.1"
+    },
+    {
+      "variable": "technical.pacing",
+      "correlation": -0.035,
+      "direction": "near_zero",
+      "interpretation": "Weak signal despite qualitative discussion",
+      "recommended_weight_multiplier": 0.8
+    },
+    {
+      "variable": "audio.audioVisualSync",
+      "correlation": 0.050,
+      "direction": "weak_positive",
+      "interpretation": "Weaker than audioQuality alone",
+      "recommended_weight_multiplier": 1.0
+    }
+  ],
+  "qualitative_quantitative_gaps": [
+    {
+      "theme": "Audio Quality",
+      "percent_notes_mention": 7.5,
+      "correlation": 0.169,
+      "gap_type": "undervalued_consciously",
+      "insight": "Strong predictor but rarely articulated - creates 'background halo' effect"
+    },
+    {
+      "theme": "Replicability",
+      "percent_notes_mention": 42.5,
+      "correlation": 0.033,
+      "gap_type": "overintellectualized",
+      "insight": "Heavily analyzed but doesn't affect preference decisions"
+    },
+    {
+      "theme": "Payoff/Punchline",
+      "percent_notes_mention": 40.6,
+      "correlation": null,
+      "gap_type": "mislabeled",
+      "insight": "Discussed as 'payoff' but actually responds to attention retention"
+    },
+    {
+      "theme": "Hook Strength",
+      "percent_notes_mention": 7.5,
+      "correlation": -0.047,
+      "gap_type": "correctly_ignored",
+      "insight": "Rarely discussed because it doesn't influence taste positively"
+    }
+  ],
+  "recommended_new_variables": [
+    {
+      "name": "narrative_coherence",
+      "rationale": "Attention retention is top predictor; need to capture story flow quality",
+      "proposed_type": "object with story_direction, beat_progression, coherence_score"
+    },
+    {
+      "name": "production_polish",
+      "rationale": "Audio predicts strongly; composite of intentional audio + visual",
+      "proposed_type": "object with audio_intentionality, visual_intentionality, polish_composite"
+    },
+    {
+      "name": "performer_execution",
+      "rationale": "Notes mention performer quality; not captured in schema",
+      "proposed_type": "object with concept_selling, tonal_match, commitment_signals"
+    },
+    {
+      "name": "engagement_curve",
+      "rationale": "Retention over time, not just total; captures 'slow burn' quality",
+      "proposed_type": "object with retention_pattern, hooks_needed, payoff_timing"
+    },
+    {
+      "name": "humor_execution_quality",
+      "rationale": "49% of notes mention humor but no humor metric predicts; execution matters",
+      "proposed_type": "object with timing_quality, joke_construction, commit_level"
+    }
+  ],
+  "confidence_distribution": {
+    "certain": {
+      "count": 14,
+      "percent": 5.5,
+      "note": "Very few slam dunk decisions"
+    },
+    "somewhat": {
+      "count": 106,
+      "percent": 41.7,
+      "note": "Moderate confidence"
+    },
+    "barely": {
+      "count": 134,
+      "percent": 52.8,
+      "note": "Majority are marginal calls - exploring nuanced boundaries"
+    }
+  },
+  "dimension_distribution": {
+    "overall": {
+      "count": 198,
+      "percent": 78.0,
+      "note": "Primary focus - skewed"
+    },
+    "production": {
+      "count": 20,
+      "percent": 7.9,
+      "note": "Undersampled"
+    },
+    "rewatchable": {
+      "count": 20,
+      "percent": 7.9,
+      "note": "Undersampled"
+    },
+    "hook": {
+      "count": 16,
+      "percent": 6.3,
+      "note": "Undersampled"
+    }
+  }
+}

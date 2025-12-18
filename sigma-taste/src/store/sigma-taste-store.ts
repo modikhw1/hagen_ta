@@ -9,6 +9,7 @@ import type {
   SigmaTasteWeights,
   VideoProjection 
 } from '@/types';
+import { findInformativePairs } from '@/lib/utils';
 
 interface SigmaTasteState {
   // Data
@@ -60,6 +61,10 @@ interface SigmaTasteState {
   setAdversarialQueue: (videos: Video[]) => void;
   resolveAdversarial: (videoId: string, notes: string) => void;
   
+  // Actions - Import
+  importComparisons: (comparisons: PairwiseComparison[], merge?: boolean) => void;
+  importVideos: (videos: Video[], merge?: boolean) => void;
+  
   // Computed
   getVideoById: (id: string) => Video | undefined;
   getAdversarialCases: () => Video[];
@@ -102,22 +107,45 @@ export const useSigmaTasteStore = create<SigmaTasteState>()(
       })),
       
       generateComparisonQueue: (dimension, count) => {
-        const { videos } = get();
-        // Use ALL videos, not just rated ones - this is for discovery!
-        const availableVideos = videos.length > 0 ? videos : [];
-        const queue: Array<{ videoA: Video; videoB: Video; dimension: string }> = [];
+        const { videos, comparisons } = get();
+        if (videos.length < 2) return;
         
-        // Generate strategic pairs - random selection for now
-        for (let i = 0; i < count && availableVideos.length >= 2; i++) {
-          const shuffled = [...availableVideos].sort(() => Math.random() - 0.5);
-          queue.push({
-            videoA: shuffled[0],
-            videoB: shuffled[1],
-            dimension,
-          });
+        // Try smart selection first (for rated videos)
+        const ratedVideos = videos.filter(v => v.rating?.overall_score !== undefined);
+        
+        let queue: Array<{ videoA: Video; videoB: Video; dimension: string }> = [];
+        
+        if (ratedVideos.length >= 2) {
+          // Use informative pair selection for rated videos
+          const smartPairs = findInformativePairs(videos, comparisons, dimension, Math.min(count, 10));
+          queue = smartPairs.map(p => ({ ...p, dimension }));
         }
         
-        set({ comparisonQueue: queue });
+        // Fill remaining with random uncompared pairs
+        const comparedPairs = new Set(
+          comparisons
+            .filter(c => c.dimension === dimension)
+            .map(c => [c.video_a_id, c.video_b_id].sort().join('|'))
+        );
+        
+        const availableVideos = [...videos];
+        while (queue.length < count && availableVideos.length >= 2) {
+          const shuffled = [...availableVideos].sort(() => Math.random() - 0.5);
+          const videoA = shuffled[0];
+          const videoB = shuffled[1];
+          const pairKey = [videoA.id, videoB.id].sort().join('|');
+          
+          // Prefer uncompared pairs
+          if (!comparedPairs.has(pairKey)) {
+            queue.push({ videoA, videoB, dimension });
+            comparedPairs.add(pairKey);
+          } else if (Math.random() < 0.2) {
+            // Occasionally allow re-comparison (20% chance) for consistency checks
+            queue.push({ videoA, videoB, dimension });
+          }
+        }
+        
+        set({ comparisonQueue: queue.slice(0, count) });
       },
       
       nextComparison: () => {
@@ -211,6 +239,29 @@ export const useSigmaTasteStore = create<SigmaTasteState>()(
       resolveAdversarial: (videoId, notes) => set((state) => ({
         adversarialQueue: state.adversarialQueue.filter(v => v.id !== videoId),
       })),
+      
+      // Import
+      importComparisons: (newComparisons, merge = true) => set((state) => {
+        if (!merge) {
+          return { comparisons: newComparisons };
+        }
+        // Merge: add new comparisons that don't exist
+        const existingIds = new Set(state.comparisons.map(c => c.id));
+        const toAdd = newComparisons.filter(c => !existingIds.has(c.id));
+        return { comparisons: [...state.comparisons, ...toAdd] };
+      }),
+      
+      importVideos: (newVideos, merge = true) => set((state) => {
+        if (!merge) {
+          return { videos: newVideos };
+        }
+        // Merge: update existing videos, add new ones
+        const existingMap = new Map(state.videos.map(v => [v.id, v]));
+        for (const video of newVideos) {
+          existingMap.set(video.id, video);
+        }
+        return { videos: Array.from(existingMap.values()) };
+      }),
 
       // Computed
       getVideoById: (id) => get().videos.find(v => v.id === id),

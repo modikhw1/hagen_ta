@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "source": "QUESTION_BATTERY.md user responses",
+    "date": "2025-12-17",
+    "purpose": "Structured insights from calibration battery for schema evolution"
+  },
+  "part_1_audio": {
+    "discovery": {
+      "quantitative": "audioQuality is 2nd strongest predictor (r=+0.169)",
+      "qualitative": "Only 7.5% of notes mention audio"
+    },
+    "user_answers": {
+      "audio_awareness": "Almost never - audio doesn't register consciously",
+      "theory": "Audio quality connected to clips with good or intentional production quality. Videos with good composition, camera angles would also have good audio.",
+      "important_elements": ["Clean dialogue/voice clarity", "Absence of distracting audio issues", "Music choice and energy"]
+    },
+    "implications": {
+      "weight_adjustment": "Increase audioQuality weight significantly",
+      "new_signal": "Add production_polish composite that includes audio intentionality"
+    }
+  },
+  "part_2_hooks_vs_retention": {
+    "discovery": {
+      "quantitative": "hookStrength is NEGATIVE (r=-0.047), attentionRetention is TOP (+0.173)",
+      "meaning": "Flashy openings hurt preference; sustained engagement wins"
+    },
+    "user_answers": {
+      "what_keeps_watching": ["Strong opening that promises something interesting", "Curiosity about how premise will resolve", "Feeling like each moment adds something"],
+      "desperate_vs_earned_hooks": "POV text overlay that does too much, sets too much of the premise or overexplains. Subconsciously connected to low effort content that has premise setup entirely the first second, payoff within 3-7 seconds in unsophisticated way.",
+      "good_hooks": "Strong hook but allows slow burn tempo, with creative movements/beats, or good payoff. Depends on concept/premise/script quality or if core idea is original/unique."
+    },
+    "implications": {
+      "weight_adjustment": "hookStrength should be neutral or negative weight",
+      "new_signal": "Add hook_analysis with desperation_signals detection",
+      "rubric": "Detect: excessive_text_first_second, entire_premise_in_hook, clickbait_promise, overexplained_setup"
+    }
+  },
+  "part_3_originality": {
+    "discovery": {
+      "quantitative": "scriptOriginality correlates (+0.123) but scriptReplicability near-zero (+0.033)",
+      "qualitative": "44.3% notes discuss originality, 42.5% discuss replicability"
+    },
+    "user_answers": {
+      "what_counts_as_original": "Subverts expectations, plays on good trope or cultural callback without being too obvious or straightforward. If joke feels like it's coming from miles away, hinders creativity feeling. Trope must be emotionally engaging.",
+      "clever_vs_obvious": "Simple premise (interrupted lunch) doesn't win prizes. Second video (dream state, biting colleague) has more cleverness due to implying story is set in another dimension.",
+      "replicability_role": "Matters for utility, not enjoyment. σTaste value includes what's valuable for service. Contains multitude of factors."
+    },
+    "replicability_subfactors_identified": [
+      "How easy to replicate by similar company",
+      "Hassle/preparation needed",
+      "How advanced is setup",
+      "How much expected of characters (social risks, animated acting)",
+      "Amount of people, props, backdrops required",
+      "Script strength independent of backdrop",
+      "Can props/scenes be replaced or creatively altered",
+      "1:1 copying possibility",
+      "Skilled editing required",
+      "Concept too niche or alienating tone"
+    ],
+    "implications": {
+      "schema_change": "Decompose replicability into 8+ sub-factors",
+      "originality_split": "Consider premise_novelty, execution_freshness, combination_unexpectedness"
+    }
+  },
+  "part_4_humor": {
+    "discovery": {
+      "quantitative": "49.1% notes mention humor, but no humor metric strongly predicts",
+      "hypothesis": "Not IF funny, but HOW executed"
+    },
+    "user_answers": {
+      "humor_type_preference": "Every type can be fun. Makeup of what makes it good depends on what's happening in sketch.",
+      "clever_vs_funny": "Cleverness feels like positive surprise, too smart or well-thought out while seeming effortless. Goes against expectations while implying backstory/dynamic read between lines.",
+      "example_clever": "Worker checking with colleagues after stressful shift. One worker frozen filling cup, overflowing (shell-shocked). Plays on premise + war squad trope. Visual reveal is fun and unexpected."
+    },
+    "implications": {
+      "new_signal": "Add humor_execution_quality separate from humor_type",
+      "focus": "Timing, construction, commitment level matter more than category"
+    }
+  },
+  "part_5_payoff": {
+    "discovery": {
+      "quantitative": "40.6% notes discuss payoff, but no payoff metric predicts directly",
+      "observation": "attentionRetention (retention throughout) matters more than endpoint"
+    },
+    "user_answers": {
+      "weak_payoff": "Simple or obvious closure. Pre-recorded dub TikTok trends. Too abstract or unclear. Ending too obvious. Known trope with known beginning/middle/end.",
+      "setup_payoff_relationship": "It depends on content type. Prefer 7-25 seconds. Payoff doesn't need to be punchy/high energy but should close theme with meaningful ending.",
+      "fast_food_analogy": "3-10 second concepts with big 'in your face' payoff aren't memorable. Delicious initial bite but no nutrition, feels flat/empty."
+    },
+    "implications": {
+      "new_signal": "Add payoff_analysis with earned_vs_cheap distinction",
+      "rubric": "Detect: closure_quality, surprise_fit, substance_level (empty_calories vs genuinely_clever)"
+    }
+  },
+  "part_6_production": {
+    "discovery": {
+      "quantitative": "cutsPerMinute correlates (+0.129)",
+      "qualitative": "52.8% notes mention production"
+    },
+    "user_answers": {
+      "faster_pacing_meaning": ["Energy/momentum feeling", "Quick comedic timing", "Intention behind editing signals professionalism/focus = quality"],
+      "too_fast": "Hard to replicate due to editing difficulty. If concept leans on editing, trickier to replicate. More jarring to watch. Average business owner can't do professional editing.",
+      "production_quality_ranking": {
+        "image_resolution": 5,
+        "lighting": 4,
+        "audio_clarity": 4,
+        "editing_sophistication": 4,
+        "camera_work": 4,
+        "overall_polish": 4,
+        "color_grading": 3
+      }
+    },
+    "implications": {
+      "new_signal": "Track editing intentionality not just speed",
+      "replicability": "Factor editing skill into replicability assessment"
+    }
+  },
+  "part_7_hidden_variables": {
+    "narrative_coherence": {
+      "user_answer": "Important to have sketch move in straight direction. Incrementally heighten emotional resonance, take joke further. Story moves forward with new developments in steady fashion.",
+      "example_steady": "Manager watching → worker making mistakes. Engaging aspect is seeing new shots of unique absurdist mistakes. Steady stream of 'next thing'.",
+      "example_building": "Restaurant payment argument. Dialogue gets more dynamic/high energy. Woman tries more ways to convince. Punchline: they're at different tables, don't know each other.",
+      "implication": "Add narrative_flow with story_direction, beat_progression, momentum_type"
+    },
+    "performer_execution": {
+      "user_answer": "50/50 premise vs performer. Performer can elevate or kill premise significantly.",
+      "what_makes_good_performer": "Understanding voice as actor, what's implied about person. Animated facial expressions for physical comedy. Willingness to take social risks, show personality, be butt of joke. Must 'sell' concept with matching emotional undertones.",
+      "implication": "Add performer_execution with concept_selling, social_risk, tonal_match"
+    },
+    "ai_accuracy": {
+      "user_answer": "Often wrong on many assessments. Mixed - accurate on some dimensions, wrong on others.",
+      "reliable": "Objective values - production value, editing speed, hookStrength",
+      "unreliable": "Subjective values like 'creativity'. Single number metrics for complex concepts.",
+      "implication": "Use reasoning chains; don't rely on single scores for subjective qualities"
+    }
+  },
+  "part_8_meta": {
+    "sigma_taste_definition": {
+      "user_answer": "σTaste combines what's good for hagen service (what will sell) + subjective taste (what I feel is good). Not about max virality or max money.",
+      "category_issue": "Some content isn't the 'type' looked for (informative video, interview, montage). Comparing across types is invalid."
+    },
+    "four_categories": [
+      "Good: Works in service context, has σTaste",
+      "Bad: Low quality but right type (can be improved)",
+      "Bad: Wrong type entirely (should be filtered)",
+      "Bad: Low quality AND wrong type"
+    ],
+    "missing_factors": {
+      "user_answer": "Model should understand full conceptual ideas as human would. Creativity/originality/engagement/trope quality requires human-level understanding first.",
+      "strata_concept": "Multiple layers/filters that make video fit within context. Within strata, sideways comparisons (same type, different category) or up/down (less good, same type)."
+    },
+    "priority_addition": "Strata - filter by type/context FIRST, then compare within categories"
+  }
+}

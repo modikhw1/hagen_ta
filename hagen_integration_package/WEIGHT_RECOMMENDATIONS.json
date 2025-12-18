@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "generated": "2025-12-18",
+    "source": "hagen_ta correlation analysis + question battery",
+    "purpose": "Ready-to-apply weight adjustments for hagen fingerprint system"
+  },
+  "current_layer_weights": {
+    "comment": "Current weights in hagen profile-fingerprint.ts",
+    "L1_quality": 0.35,
+    "L2_personality": 0.40,
+    "L3_production": 0.25
+  },
+  "recommended_layer_weights": {
+    "comment": "Revised based on diagnostic and taste analysis",
+    "audience_alignment": 0.35,
+    "tone_personality": 0.30,
+    "format_appropriateness": 0.20,
+    "aspiration_alignment": 0.15
+  },
+  "signal_weight_adjustments": {
+    "increase": [
+      {
+        "path": "engagement.attentionRetention",
+        "current_weight": 1.0,
+        "recommended_weight": 2.0,
+        "correlation": 0.173,
+        "rationale": "Top predictor of preference; sustained engagement is key"
+      },
+      {
+        "path": "audio.quality",
+        "current_weight": 1.0,
+        "recommended_weight": 1.8,
+        "correlation": 0.169,
+        "rationale": "2nd strongest predictor despite low conscious awareness"
+      },
+      {
+        "path": "technical.cutsPerMinute",
+        "current_weight": 1.0,
+        "recommended_weight": 1.5,
+        "correlation": 0.129,
+        "rationale": "Intentional, dynamic editing preferred"
+      },
+      {
+        "path": "script.originality.score",
+        "current_weight": 1.0,
+        "recommended_weight": 1.4,
+        "correlation": 0.123,
+        "rationale": "Creativity valued; aligned with qualitative notes"
+      }
+    ],
+    "decrease": [
+      {
+        "path": "visual.hookStrength",
+        "current_weight": 1.0,
+        "recommended_weight": 0.5,
+        "correlation": -0.047,
+        "rationale": "NEGATIVE predictor; flashy hooks signal desperation"
+      },
+      {
+        "path": "script.replicability.score",
+        "current_weight": 1.0,
+        "recommended_weight": 0.7,
+        "correlation": 0.033,
+        "rationale": "Heavily discussed but doesn't predict preference"
+      },
+      {
+        "path": "technical.pacing",
+        "current_weight": 1.0,
+        "recommended_weight": 0.8,
+        "correlation": -0.035,
+        "rationale": "Weak signal; cutsPerMinute is better proxy"
+      }
+    ],
+    "neutral": [
+      {
+        "path": "audio.audioVisualSync",
+        "current_weight": 1.0,
+        "recommended_weight": 1.0,
+        "correlation": 0.050,
+        "rationale": "Weak positive; audioQuality alone is stronger"
+      }
+    ]
+  },
+  "new_signals_to_add": [
+    {
+      "name": "narrative_coherence",
+      "suggested_weight": 1.6,
+      "rationale": "Supports top predictor (attentionRetention); captures story flow quality",
+      "schema_location": "v1.1 narrative_flow object"
+    },
+    {
+      "name": "production_polish",
+      "suggested_weight": 1.5,
+      "rationale": "Composite of audio + visual intentionality; explains audio paradox",
+      "schema_location": "v1.1 production_polish object"
+    },
+    {
+      "name": "performer_execution",
+      "suggested_weight": 1.3,
+      "rationale": "50/50 split with premise per user; can elevate or kill content",
+      "schema_location": "v1.1 performer_execution object"
+    },
+    {
+      "name": "payoff_quality",
+      "suggested_weight": 1.4,
+      "rationale": "40.6% notes discuss; earned vs cheap distinction matters",
+      "schema_location": "v1.1 payoff_analysis object"
+    }
+  ],
+  "hard_filters_before_scoring": {
+    "comment": "These should FILTER OUT before soft scoring",
+    "filters": [
+      {
+        "name": "content_type_relevance",
+        "logic": "content_classification.service_relevance == 'in_scope'",
+        "rationale": "Don't compare interview content against sketch comedy"
+      },
+      {
+        "name": "environment_compatibility",
+        "logic": "video.environment_requirements compatible with brand.environment_availability",
+        "rationale": "Rooftop bar can't use kitchen content"
+      },
+      {
+        "name": "replicability_feasibility",
+        "logic": "video.replicability.actor_count <= brand.team_size AND video.replicability.equipment_needed subset of brand.equipment_available",
+        "rationale": "Solo operator can't replicate team content"
+      },
+      {
+        "name": "risk_tolerance",
+        "logic": "video.risk_level <= brand.risk_tolerance",
+        "rationale": "Family restaurant won't do edgy content"
+      }
+    ]
+  },
+  "implementation_notes": {
+    "priority_1": "Apply signal weight adjustments to existing fingerprint computation",
+    "priority_2": "Add hard filters before scoring pipeline",
+    "priority_3": "Update Vertex system instructions with v1.1 prompts",
+    "priority_4": "Decompose replicability into sub-factors",
+    "priority_5": "Add new signal categories (narrative_flow, performer_execution, etc.)",
+    "validation": "Re-run on test brands, compare accuracy before/after"
+  }
+}

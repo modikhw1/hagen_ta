@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SigmaTasteV1_1",
+  "description": "σTaste analysis schema v1.1 - evolved from 254 comparisons and question battery insights",
+  "type": "object",
+  "required": ["schema_version", "content_classification"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.1"
+    },
+    "content_classification": {
+      "type": "object",
+      "description": "Stage 1: Hard filter - is this the right type of content?",
+      "required": ["content_type", "service_relevance"],
+      "properties": {
+        "content_type": {
+          "type": "string",
+          "enum": ["sketch_comedy", "reaction_content", "informational", "interview_format", "montage_visual", "tutorial_how_to", "testimonial", "promotional_direct", "trend_recreation", "hybrid"]
+        },
+        "service_relevance": {
+          "type": "string",
+          "enum": ["in_scope", "out_of_scope", "edge_case"]
+        },
+        "classification_reasoning": {
+          "type": "string"
+        },
+        "strata_id": {
+          "type": "string",
+          "enum": ["hospitality_sketch", "workplace_relatable", "customer_interaction", "product_showcase", "atmosphere_vibe"]
+        }
+      }
+    },
+    "replicability_decomposed": {
+      "type": "object",
+      "description": "Stage 2: Utility assessment - can a business replicate this?",
+      "properties": {
+        "one_to_one_copy_feasibility": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "integer", "minimum": 1, "maximum": 3 },
+            "reasoning": { "type": "string" },
+            "required_adaptations": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "actor_requirements": {
+          "type": "object",
+          "properties": {
+            "count": { "type": "string", "enum": ["solo", "duo", "small_group", "crowd"] },
+            "skill_level": { "type": "string", "enum": ["anyone", "comfortable_on_camera", "acting_required", "professional"] },
+            "social_risk_required": { "type": "string", "enum": ["none", "mild", "significant", "extreme"] },
+            "appearance_dependency": { "type": "string", "enum": ["none", "low", "moderate", "high"] }
+          }
+        },
+        "environment_requirements": {
+          "type": "object",
+          "properties": {
+            "backdrop_interchangeability": { "type": "string", "enum": ["any_venue", "similar_venue_type", "specific_setting_needed"] },
+            "prop_dependency": {
+              "type": "object",
+              "properties": {
+                "level": { "type": "string", "enum": ["none", "common_items", "specific_props", "custom_fabrication"] },
+                "items": { "type": "array", "items": { "type": "string" } },
+                "substitutable": { "type": "boolean" }
+              }
+            },
+            "setup_complexity": { "type": "string", "enum": ["point_and_shoot", "basic_tripod", "multi_location", "elaborate_staging"] }
+          }
+        },
+        "production_requirements": {
+          "type": "object",
+          "properties": {
+            "editing_skill": { "type": "string", "enum": ["basic_cuts", "timed_edits", "effects_required", "professional_post"] },
+            "editing_as_punchline": { "type": "boolean" },
+            "estimated_time": { "type": "string", "enum": ["under_15min", "under_1hr", "half_day", "full_day_plus"] }
+          }
+        },
+        "concept_transferability": {
+          "type": "object",
+          "properties": {
+            "product_swappable": { "type": "boolean" },
+            "humor_travels": { "type": "boolean" },
+            "audience_narrowing_factors": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "narrative_flow": {
+      "type": "object",
+      "description": "Stage 3: Quality signal - how does the story progress?",
+      "properties": {
+        "story_direction": { "type": "string", "enum": ["linear_build", "escalating", "revelation_based", "circular", "fragmented"] },
+        "beat_progression": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "enum": ["incremental_heightening", "steady_examples", "dialogue_escalation", "visual_accumulation"] },
+            "additive_per_beat": { "type": "boolean" },
+            "filler_detected": { "type": "boolean" }
+          }
+        },
+        "momentum_type": { "type": "string", "enum": ["building_to_climax", "steady_stream", "single_beat_payoff", "no_clear_structure"] },
+        "coherence_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "coherence_notes": { "type": "string" }
+      }
+    },
+    "performer_execution": {
+      "type": "object",
+      "description": "Stage 3: Quality signal - how well is the concept sold?",
+      "properties": {
+        "concept_selling": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "persona_clarity": { "type": "string", "enum": ["clear_character", "ambiguous", "just_themselves"] }
+          }
+        },
+        "tonal_match": {
+          "type": "object",
+          "properties": {
+            "matches_content": { "type": "boolean" },
+            "mismatch_notes": { "type": "string" }
+          }
+        },
+        "commitment_signals": {
+          "type": "object",
+          "properties": {
+            "facial_expressiveness": { "type": "string", "enum": ["minimal", "appropriate", "highly_animated"] },
+            "physical_commitment": { "type": "string", "enum": ["static", "moderate_movement", "full_physical_comedy"] },
+            "embarrassment_tolerance": { "type": "string", "enum": ["safe_performance", "mild_vulnerability", "full_commitment"] }
+          }
+        },
+        "performance_dependency": { "type": "string", "enum": ["concept_carries_itself", "good_delivery_helps", "requires_strong_performer"] }
+      }
+    },
+    "hook_analysis": {
+      "type": "object",
+      "description": "Stage 3: Quality signal - hook quality with desperation detection",
+      "properties": {
+        "hook_style": { "type": "string", "enum": ["relatable_situation", "question", "action", "visual_intrigue", "text_overlay", "sound_grab"] },
+        "desperation_signals": {
+          "type": "object",
+          "properties": {
+            "detected": { "type": "boolean" },
+            "signals": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["excessive_text_first_second", "entire_premise_in_hook", "clickbait_promise", "overexplained_setup", "loud_attention_grab"]
+              }
+            }
+          }
+        },
+        "promise_quality": {
+          "type": "object",
+          "properties": {
+            "curiosity_generated": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "promise_fulfilled": { "type": "boolean" },
+            "allows_slow_burn": { "type": "boolean" }
+          }
+        },
+        "emotional_undertone": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "payoff_analysis": {
+      "type": "object",
+      "description": "Stage 3: Quality signal - payoff quality assessment",
+      "properties": {
+        "payoff_type": { "type": "string", "enum": ["visual_reveal", "edit_cut", "dialogue_delivery", "twist", "callback", "escalation_peak"] },
+        "closure_quality": {
+          "type": "object",
+          "properties": {
+            "meaningful_ending": { "type": "boolean" },
+            "feels_empty": { "type": "boolean" },
+            "earned_vs_cheap": { "type": "string", "enum": ["fully_earned", "somewhat_earned", "cheap_shortcut", "no_real_payoff"] }
+          }
+        },
+        "surprise_fit": {
+          "type": "object",
+          "properties": {
+            "predictability": { "type": "string", "enum": ["completely_obvious", "somewhat_expected", "pleasant_surprise", "total_twist"] },
+            "logical_in_hindsight": { "type": "boolean" }
+          }
+        },
+        "trope_handling": {
+          "type": "object",
+          "properties": {
+            "uses_known_trope": { "type": "boolean" },
+            "trope_name": { "type": "string" },
+            "trope_treatment": { "type": "string", "enum": ["subverted_cleverly", "played_straight_well", "lazy_execution"] }
+          }
+        },
+        "substance_level": {
+          "type": "object",
+          "properties": {
+            "content_type": { "type": "string", "enum": ["empty_calories", "moderate_substance", "genuinely_clever"] },
+            "memorability": { "type": "integer", "minimum": 1, "maximum": 5 }
+          }
+        }
+      }
+    },
+    "production_polish": {
+      "type": "object",
+      "description": "Stage 3: Quality signal - intentionality of production",
+      "properties": {
+        "audio_intentionality": {
+          "type": "object",
+          "properties": {
+            "purposeful": { "type": "boolean" },
+            "elements_aligned": { "type": "boolean" },
+            "comedic_audio_timing": { "type": "string", "enum": ["perfect", "good", "off", "none"] }
+          }
+        },
+        "visual_intentionality": {
+          "type": "object",
+          "properties": {
+            "purposeful_framing": { "type": "boolean" },
+            "quality_consistency": { "type": "boolean" },
+            "lighting_appropriate": { "type": "boolean" }
+          }
+        },
+        "polish_composite": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "elevating_factors": { "type": "array", "items": { "type": "string" } },
+            "detracting_factors": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "cuts_per_minute": { "type": "number" },
+        "pacing_feel": { "type": "string", "enum": ["rushed", "snappy", "comfortable", "slow", "dragging"] }
+      }
+    },
+    "scenes": {
+      "type": "object",
+      "description": "Preserved from v1.0 - essential for joke understanding",
+      "properties": {
+        "sceneBreakdown": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sceneNumber": { "type": "integer" },
+              "timestamp": { "type": "string" },
+              "duration": { "type": "string" },
+              "visualContent": { "type": "string" },
+              "audioContent": { "type": "string" },
+              "impliedMeaning": { "type": "string" },
+              "viewerAssumption": { "type": "string" },
+              "narrativeFunction": { "type": "string", "enum": ["hook", "setup", "development", "misdirection", "payoff", "tag"] },
+              "editSignificance": { "type": "string" }
+            }
+          }
+        },
+        "editAsPunchline": { "type": "boolean" },
+        "editPunchlineExplanation": { "type": "string" },
+        "misdirectionTechnique": { "type": "string" }
+      }
+    },
+    "utility_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Computed from Stage 2 replicability factors"
+    },
+    "quality_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Computed from Stage 3 quality signals"
+    },
+    "sigma_taste_final": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Weighted combination of utility and quality"
+    }
+  }
+}
