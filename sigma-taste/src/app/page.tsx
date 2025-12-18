@@ -18,6 +18,7 @@ import {
   Eye,
   FileJson,
   BarChart3,
+  RotateCcw,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -29,6 +30,7 @@ export default function HomePage() {
     setVideos,
     importComparisons,
     importVideos,
+    resetAllData,
   } = useSigmaTasteStore();
   
   const [loading, setLoading] = useState(false);
@@ -185,6 +187,22 @@ export default function HomePage() {
                   {loading ? 'Loading...' : 'Load from API'}
                 </button>
               )}
+              
+              {/* Reset button */}
+              <button
+                onClick={() => {
+                  if (confirm('Reset all data including comparisons? This cannot be undone.')) {
+                    resetAllData();
+                    loadVideos();
+                  }
+                }}
+                className="px-4 py-2 bg-red-600/20 hover:bg-red-600/30 text-red-400 
+                           rounded-lg font-medium flex items-center gap-2 text-sm"
+                title="Reset all persisted data and reload fresh"
+              >
+                <RotateCcw className="w-4 h-4" />
+                Reset v1.2
+              </button>
             </div>
           </div>
           

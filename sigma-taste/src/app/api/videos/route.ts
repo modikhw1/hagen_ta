@@ -4,14 +4,15 @@ import path from 'path';
 
 export async function GET() {
   try {
-    // Try signed URLs dataset first, fallback to original
-    const signedUrlsPath = path.join(process.cwd(), '..', 'exports', 'exports_with_urls_2025-12-16.json');
-    const originalPath = path.join(process.cwd(), '..', 'exports', 'dataset_2025-12-16.json');
+    // v1.2 dataset path
+    const v1_2Path = path.join(process.cwd(), '..', 'exports', 'v1.2', 'dataset_2025-12-18.json');
+    // Fallback to v1.1 if v1.2 not found
+    const v1_1Path = path.join(process.cwd(), '..', 'exports', 'v1.1', 'dataset_2025-12-16.json');
     
-    let datasetPath = signedUrlsPath;
-    if (!fs.existsSync(signedUrlsPath)) {
-      console.log('Signed URLs dataset not found, using original');
-      datasetPath = originalPath;
+    let datasetPath = v1_2Path;
+    if (!fs.existsSync(v1_2Path)) {
+      console.log('v1.2 dataset not found, falling back to v1.1');
+      datasetPath = v1_1Path;
     }
     
     console.log('Loading dataset from:', datasetPath);

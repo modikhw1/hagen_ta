@@ -1,8 +1,10 @@
 /**
- * Correlation Analysis Engine for σTaste Discovery
+ * Correlation Analysis Engine for σTaste Discovery — v1.2
  * 
  * Joins pairwise comparisons with video metadata to find which AI variables
  * predict human preferences, which are noise, and where gaps exist.
+ * 
+ * Updated: 2025-12-18 for v1.2 schema alignment
  */
 
 import type { Video, PairwiseComparison, DeepAnalysis } from '@/types';
@@ -15,7 +17,7 @@ const CONFIDENCE_WEIGHTS: Record<string, number> = {
 };
 
 // All numeric variable paths to extract from deep_analysis
-// These paths match the ACTUAL structure in dataset_2025-12-16.json
+// v1.2 paths matching dataset_2025-12-18.json structure
 export const NUMERIC_VARIABLE_PATHS = [
   // Audio (3)
   'audio.quality',
@@ -42,9 +44,19 @@ export const NUMERIC_VARIABLE_PATHS = [
   'trends.timelessness',
   'trends.trendAlignment',
   
-  // Script - nested objects with .score (2)
+  // Script - nested objects (5)
   'script.originality.score',
   'script.replicability.score',
+  'script.replicability.contextDependency',
+  'script.scriptQuality',
+  'script.humor.comedyTiming',
+  'script.humor.absurdismLevel',
+  'script.emotional.relatability',
+  'script.emotional.emotionalIntensity',
+  'script.structure.payoffStrength',
+  
+  // Scenes (2)
+  'scenes.visualNarrativeSync',
   
   // Schema V1 Signals - Coherence (1)
   'schema_v1_signals.coherence.personality_message_alignment_0_1',
@@ -68,7 +80,7 @@ export const NUMERIC_VARIABLE_PATHS = [
   'schema_v1_signals.personality.confidence_1_10',
 ];
 
-// Total: 28 numeric variable paths
+// Total: 36 numeric variable paths
 
 // Categorical variable paths for one-hot encoding (future use)
 export const CATEGORICAL_VARIABLE_PATHS = [

@@ -1,4 +1,5 @@
-// Core σTaste Types
+// Core σTaste Types — v1.2 Schema
+// Updated: 2025-12-18 for alignment with Hagen integration package
 
 export interface Video {
   id: string;
@@ -19,6 +20,7 @@ export interface Video {
 }
 
 export interface DeepAnalysis {
+  // Core analysis sections
   audio?: AudioAnalysis;
   scenes?: SceneAnalysis;
   script?: ScriptAnalysis;
@@ -27,104 +29,246 @@ export interface DeepAnalysis {
   content?: ContentAnalysis;
   technical?: TechnicalAnalysis;
   engagement?: EngagementAnalysis;
+  
+  // v1.2 structured signals
+  schema_version?: number;
   schema_v1_signals?: SchemaV1Signals;
 }
 
 export interface AudioAnalysis {
-  quality: string;
+  quality: number;
+  audioMix?: string;
   musicType: string;
   musicGenre: string;
-  audioEnergy: string;
+  audioEnergy: number;
+  energyLevel?: string;
   hasVoiceover: boolean;
   soundEffects: string[];
+  voiceoverTone?: string;
+  audioVisualSync?: number;
+  voiceoverQuality?: number | null;
+}
+
+export interface SceneBreakdownItem {
+  duration: string;
+  timestamp: string;
+  sceneNumber: number;
+  audioContent: string;
+  visualContent: string;
+  impliedMeaning: string;
+  editSignificance: string;
+  viewerAssumption: string;
+  narrativeFunction: string;
 }
 
 export interface SceneAnalysis {
-  sceneBreakdown: any[];
+  sceneBreakdown: SceneBreakdownItem[];
   editAsPunchline: boolean;
+  visualNarrativeSync?: number;
   misdirectionTechnique: string;
+  editPunchlineExplanation?: string;
 }
 
 export interface ScriptAnalysis {
   humor: {
     humorType: string;
     isHumorous: boolean;
-    comedyTiming: string;
-    absurdismLevel: string;
+    comedyTiming: number;
+    absurdismLevel: number;
+    humorMechanism?: string;
+    surrealismLevel?: number;
+    visualComedyElement?: string;
   };
-  emotional: any;
+  emotional: {
+    emotionalArc?: string;
+    relatability?: number;
+    primaryEmotion?: string;
+    emotionalIntensity?: number;
+  };
+  hasScript?: boolean;
   structure: {
     hook: string;
     setup: string;
     payoff: string;
+    hasTwist?: boolean;
+    hookType?: string;
+    payoffType?: string;
+    development?: string;
+    hasCallback?: boolean;
+    twistDelivery?: string;
+    payoffStrength?: number;
   };
   transcript: string;
-  originality: number;
-  replicability: number;
+  conceptCore?: string;
+  originality: {
+    score: number;
+    novelElements?: string[];
+    similarFormats?: string[];
+  };
+  replicability: {
+    score: number;
+    template?: string;
+    requiredElements?: string[];
+    variableElements?: string[];
+    contextDependency?: number;
+    resourceRequirements?: string;
+  };
+  scriptQuality?: number;
+  visualTranscript?: string;
 }
 
 export interface TrendAnalysis {
   timelessness: number;
-  trendAlignment: string;
+  trendAlignment: number;
   trendingElements: string[];
 }
 
 export interface VisualAnalysis {
   summary: string;
+  transitions?: string[];
+  colorPalette?: string[];
   hookStrength: number;
-  overallQuality: number;
   mainElements: string[];
   textOverlays: string[];
+  colorDiversity?: number;
+  overallQuality: number;
+  hookDescription?: string;
+  visualHierarchy?: string;
+  brandingElements?: string[];
+  compositionQuality?: number;
 }
 
 export interface ContentAnalysis {
   style: string;
   topic: string;
   format: string;
+  duration?: number;
   keyMessage: string;
+  callsToAction?: string[];
+  emotionalTone?: string;
   targetAudience: string;
+  valueProposition?: string;
+  uniquenessFactors?: string[];
+  narrativeStructure?: string;
 }
 
 export interface TechnicalAnalysis {
   pacing: number;
   lighting: string;
   cameraWork: string;
+  resolution?: string;
+  aspectRatio?: string;
   editingStyle: string;
   cutsPerMinute: number;
+  specialEffects?: string[];
+  pacingDescription?: string;
 }
 
 export interface EngagementAnalysis {
   replayValue: number;
   shareability: number;
   scrollStopPower: number;
+  engagementFactors?: string[];
+  attentionRetention?: number;
 }
 
+// v1.2 Schema V1 Signals — Comprehensive structured analysis
 export interface SchemaV1Signals {
-  humor?: any;
-  coherence?: any;
-  execution?: any;
-  statement?: any;
-  conversion?: any;
+  humor?: HumorSignals;
+  coherence?: CoherenceSignals;
+  execution?: ExecutionSignals;
+  statement?: StatementSignals;
+  conversion?: ConversionSignals;
   risk_level?: RiskLevel;
   hospitality?: HospitalitySignals;
-  personality?: any;
+  personality?: PersonalitySignals;
   replicability?: ReplicabilitySignals;
   target_audience?: TargetAudienceSignals;
   environment_requirements?: EnvironmentSignals;
 }
 
+export interface HumorSignals {
+  target?: string;
+  present: boolean;
+  age_code?: string;
+  humor_types?: string[];
+  meanness_risk?: string;
+}
+
+export interface CoherenceSignals {
+  contradictions?: string[];
+  personality_message_alignment_0_1?: number;
+}
+
+export interface ExecutionSignals {
+  format_name_if_any?: string;
+  effortlessness_1_10?: number;
+  intentionality_1_10?: number;
+  has_repeatable_format?: boolean;
+  social_permission_1_10?: number;
+  production_investment_1_10?: number;
+}
+
+export interface StatementSignals {
+  subtext?: string[];
+  opinion_stance?: {
+    defended?: boolean;
+    edginess?: string;
+    makes_opinions?: boolean;
+  };
+  primary_intent?: string;
+  apparent_audience?: string;
+  self_seriousness_1_10?: number;
+}
+
+export interface ConversionSignals {
+  cta_types?: string[];
+  visit_intent_strength_0_1?: number;
+}
+
+export interface RiskLevel {
+  humor_risk?: string;
+  content_edge: string;
+  trend_reliance?: string;
+  controversy_potential: string;
+}
+
+export interface HospitalitySignals {
+  vibe: string | string[];
+  occasion: string | string[];
+  price_tier?: string;
+  business_type?: string;
+  service_ethos?: string | string[];
+  locality_markers?: string[];
+  tourist_orientation?: string;
+  signature_items_or_offers?: string[];
+}
+
+export interface PersonalitySignals {
+  energy_1_10?: number;
+  warmth_1_10?: number;
+  formality_1_10?: number;
+  confidence_1_10?: number;
+  traits_observed?: string[];
+  social_positioning?: {
+    accessibility?: string;
+    authority_claims?: boolean;
+    peer_relationship?: boolean;
+  };
+}
+
 export interface ReplicabilitySignals {
-  actor_count: 'solo' | 'duo' | 'small_team' | 'large_team';
-  setup_complexity: 'phone_only' | 'basic_tripod' | 'lighting_setup' | 'full_studio';
-  skill_required: 'anyone' | 'basic_editing' | 'intermediate' | 'professional';
-  environment_dependency: 'anywhere' | 'specific_indoor' | 'specific_outdoor' | 'venue_required';
+  actor_count: string;
+  setup_complexity: string;
+  skill_required: string;
+  environment_dependency: string;
   equipment_needed: string[];
-  estimated_time: 'under_1hr' | '1_4hrs' | 'half_day' | 'full_day';
+  estimated_time: string;
 }
 
 export interface TargetAudienceSignals {
   age_range: { primary: string; secondary?: string };
-  income_level: 'budget' | 'mid_range' | 'upscale' | 'luxury' | 'broad';
+  income_level: string;
   lifestyle_tags: string[];
   vibe_alignment: string;
   primary_occasion: string;
@@ -136,23 +280,6 @@ export interface EnvironmentSignals {
   lighting_conditions: string;
   noise_tolerance: string;
   customer_visibility: string;
-}
-
-export interface RiskLevel {
-  content_edge: 'safe' | 'edgy' | 'risky';
-  humor_risk: 'none' | 'low' | 'medium' | 'high';
-  trend_reliance: 'none' | 'low' | 'medium' | 'high';
-  controversy_potential: string;
-}
-
-export interface HospitalitySignals {
-  vibe: string;
-  occasion: string;
-  price_tier: string;
-  business_type: string;
-  service_ethos: string;
-  locality_markers: string[];
-  tourist_orientation: string;
 }
 
 export interface HumanRating {

@@ -1,14 +1,19 @@
 /**
- * Data Loader Utilities
+ * Data Loader Utilities — v1.2
  * 
- * Functions to load and merge data from various export files
+ * Functions to load and merge data from v1.2 export files
+ * Updated: 2025-12-18 for alignment with Hagen integration package
  */
 
 import type { Video, PairwiseComparison } from '@/types';
 
+// Default path for v1.2 dataset
+export const V1_2_DATASET_PATH = '/exports/v1.2/dataset_2025-12-18.json';
+export const V1_2_COMPARISONS_PATH = '/exports/v1.1/sigma-taste-export-2025-12-16.json';
+
 /**
  * Load videos from dataset export file
- * Handles the format from exports/dataset_2025-12-16.json
+ * Handles the format from exports/v1.2/dataset_2025-12-18.json
  */
 export async function loadVideosFromDataset(url: string): Promise<Video[]> {
   try {
@@ -16,6 +21,12 @@ export async function loadVideosFromDataset(url: string): Promise<Video[]> {
     if (!response.ok) throw new Error(`Failed to fetch: ${response.statusText}`);
     
     const data = await response.json();
+    
+    // Validate schema version
+    const firstVideo = data.videos?.[0] || data[0];
+    if (firstVideo?.deep_analysis?.schema_version) {
+      console.log(`[DataLoader] Detected schema version: ${firstVideo.deep_analysis.schema_version}`);
+    }
     
     // Handle different export formats
     if (data.videos && Array.isArray(data.videos)) {
@@ -61,11 +72,10 @@ export async function loadComparisonsFromExport(url: string): Promise<PairwiseCo
 }
 
 /**
- * Normalize video data to match our Video type
- * Handles field naming differences between export formats
+ * Normalize video data to match our Video type (v1.2)
+ * Handles the schema_v1_signals structure from Vertex AI analysis
  */
 function normalizeVideo(raw: any): Video {
-  // Handle visual_analysis vs deep_analysis naming
   const deepAnalysis = raw.deep_analysis || raw.visual_analysis || {};
   
   return {
@@ -78,7 +88,11 @@ function normalizeVideo(raw: any): Video {
       platform: raw.platform || 'unknown',
       provider: 'unknown',
     },
-    deep_analysis: deepAnalysis,
+    deep_analysis: {
+      ...deepAnalysis,
+      // Ensure schema_version is present
+      schema_version: deepAnalysis.schema_version || 1,
+    },
     gcs_uri: raw.gcs_uri || raw.signed_url || null,
     created_at: raw.created_at || new Date().toISOString(),
     analyzed_at: raw.analyzed_at || raw.created_at || new Date().toISOString(),

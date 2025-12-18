@@ -65,6 +65,9 @@ interface SigmaTasteState {
   importComparisons: (comparisons: PairwiseComparison[], merge?: boolean) => void;
   importVideos: (videos: Video[], merge?: boolean) => void;
   
+  // Actions - Reset (for v1.2 fresh start)
+  resetAllData: () => void;
+  
   // Computed
   getVideoById: (id: string) => Video | undefined;
   getAdversarialCases: () => Video[];
@@ -128,20 +131,57 @@ export const useSigmaTasteStore = create<SigmaTasteState>()(
             .map(c => [c.video_a_id, c.video_b_id].sort().join('|'))
         );
         
-        const availableVideos = [...videos];
-        while (queue.length < count && availableVideos.length >= 2) {
-          const shuffled = [...availableVideos].sort(() => Math.random() - 0.5);
-          const videoA = shuffled[0];
-          const videoB = shuffled[1];
-          const pairKey = [videoA.id, videoB.id].sort().join('|');
+        // Track video usage to ensure variety (max appearances per video)
+        const videoUsageCount = new Map<string, number>();
+        queue.forEach(q => {
+          videoUsageCount.set(q.videoA.id, (videoUsageCount.get(q.videoA.id) || 0) + 1);
+          videoUsageCount.set(q.videoB.id, (videoUsageCount.get(q.videoB.id) || 0) + 1);
+        });
+        
+        // Fisher-Yates shuffle for true randomness
+        const shuffledVideos = [...videos];
+        for (let i = shuffledVideos.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [shuffledVideos[i], shuffledVideos[j]] = [shuffledVideos[j], shuffledVideos[i]];
+        }
+        
+        // Generate all possible pairs from shuffled videos
+        const allPairs: Array<{ videoA: Video; videoB: Video }> = [];
+        for (let i = 0; i < shuffledVideos.length; i++) {
+          for (let j = i + 1; j < shuffledVideos.length; j++) {
+            allPairs.push({ videoA: shuffledVideos[i], videoB: shuffledVideos[j] });
+          }
+        }
+        
+        // Shuffle pairs again for extra randomness
+        for (let i = allPairs.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [allPairs[i], allPairs[j]] = [allPairs[j], allPairs[i]];
+        }
+        
+        const maxUsagePerVideo = 2; // Limit how often each video appears
+        let attempts = 0;
+        const maxAttempts = allPairs.length;
+        
+        for (const pair of allPairs) {
+          if (queue.length >= count || attempts >= maxAttempts) break;
+          attempts++;
           
-          // Prefer uncompared pairs
-          if (!comparedPairs.has(pairKey)) {
-            queue.push({ videoA, videoB, dimension });
+          const pairKey = [pair.videoA.id, pair.videoB.id].sort().join('|');
+          const aUsage = videoUsageCount.get(pair.videoA.id) || 0;
+          const bUsage = videoUsageCount.get(pair.videoB.id) || 0;
+          
+          // Prefer uncompared pairs with low usage
+          if (!comparedPairs.has(pairKey) && aUsage < maxUsagePerVideo && bUsage < maxUsagePerVideo) {
+            queue.push({ videoA: pair.videoA, videoB: pair.videoB, dimension });
             comparedPairs.add(pairKey);
-          } else if (Math.random() < 0.2) {
-            // Occasionally allow re-comparison (20% chance) for consistency checks
-            queue.push({ videoA, videoB, dimension });
+            videoUsageCount.set(pair.videoA.id, aUsage + 1);
+            videoUsageCount.set(pair.videoB.id, bUsage + 1);
+          } else if (Math.random() < 0.1 && aUsage < maxUsagePerVideo && bUsage < maxUsagePerVideo) {
+            // Reduced re-comparison chance to 10%
+            queue.push({ videoA: pair.videoA, videoB: pair.videoB, dimension });
+            videoUsageCount.set(pair.videoA.id, aUsage + 1);
+            videoUsageCount.set(pair.videoB.id, bUsage + 1);
           }
         }
         
@@ -262,6 +302,34 @@ export const useSigmaTasteStore = create<SigmaTasteState>()(
         }
         return { videos: Array.from(existingMap.values()) };
       }),
+
+      // Reset all persisted data (for fresh v1.2 start)
+      resetAllData: () => {
+        // Clear localStorage
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('sigma-taste-storage');
+        }
+        // Reset state
+        set({
+          videos: [],
+          projections: [],
+          clusters: [],
+          comparisons: [],
+          clusterCorrections: [],
+          hiddenVariables: [],
+          weights: {
+            audience_alignment: 0.35,
+            tone_personality_match: 0.30,
+            format_appropriateness: 0.20,
+            aspiration_alignment: 0.15,
+            custom_dimensions: {},
+          },
+          selectedVideoIds: [],
+          activeClusterId: null,
+          comparisonQueue: [],
+          adversarialQueue: [],
+        });
+      },
 
       // Computed
       getVideoById: (id) => get().videos.find(v => v.id === id),

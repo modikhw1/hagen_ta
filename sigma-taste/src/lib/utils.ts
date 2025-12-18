@@ -120,9 +120,9 @@ export function extractFeatureVector(video: Video): number[] {
     (analysis?.visual?.hookStrength ?? 5) / 10,
     (analysis?.visual?.overallQuality ?? 5) / 10,
     
-    // Content features
+    // Content features (v1.2 uses nested objects)
     analysis?.script?.humor?.isHumorous ? 1 : 0,
-    (analysis?.script?.originality ?? 5) / 10,
+    (analysis?.script?.originality?.score ?? 5) / 10,
     (analysis?.trends?.timelessness ?? 5) / 10,
     
     // Rating if available
@@ -245,14 +245,54 @@ export function findInformativePairs(
     }
   }
   
-  // Sort by score difference (lower = more informative) with some randomness
+  // Shuffle pairs first to ensure true randomness, then sort by score difference
+  // Fisher-Yates shuffle
+  for (let i = pairs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pairs[i], pairs[j]] = [pairs[j], pairs[i]];
+  }
+  
+  // Sort by score difference (lower = more informative) with significant randomness
+  // Use higher random factor (0.3) to ensure variety while still preferring informative pairs
   pairs.sort((a, b) => {
-    const aDiff = a.scoreDiff + Math.random() * 0.1;
-    const bDiff = b.scoreDiff + Math.random() * 0.1;
+    const aDiff = a.scoreDiff + Math.random() * 0.3;
+    const bDiff = b.scoreDiff + Math.random() * 0.3;
     return aDiff - bDiff;
   });
   
-  return pairs.slice(0, count).map(({ videoA, videoB }) => ({ videoA, videoB }));
+  // Ensure we don't repeat the same videos too often in a batch
+  const selectedPairs: Array<{ videoA: Video; videoB: Video }> = [];
+  const usedVideoIds = new Set<string>();
+  
+  for (const pair of pairs) {
+    if (selectedPairs.length >= count) break;
+    
+    // Limit how often each video appears (max 2 times per batch)
+    const aCount = [...usedVideoIds].filter(id => id === pair.videoA.id).length;
+    const bCount = [...usedVideoIds].filter(id => id === pair.videoB.id).length;
+    
+    if (aCount < 2 && bCount < 2) {
+      selectedPairs.push({ videoA: pair.videoA, videoB: pair.videoB });
+      usedVideoIds.add(pair.videoA.id);
+      usedVideoIds.add(pair.videoB.id);
+    }
+  }
+  
+  // If we couldn't fill the count with the diversity constraint, add more
+  if (selectedPairs.length < count) {
+    for (const pair of pairs) {
+      if (selectedPairs.length >= count) break;
+      const alreadySelected = selectedPairs.some(
+        p => (p.videoA.id === pair.videoA.id && p.videoB.id === pair.videoB.id) ||
+             (p.videoA.id === pair.videoB.id && p.videoB.id === pair.videoA.id)
+      );
+      if (!alreadySelected) {
+        selectedPairs.push({ videoA: pair.videoA, videoB: pair.videoB });
+      }
+    }
+  }
+  
+  return selectedPairs;
 }
 
 /**
